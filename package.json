@@ -1,0 +1,19 @@
+{
+  "name": "node-api-boilerplate",
+  "version": "1.0.0",
+  "description": "node-api-boilerplate",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snanilim/node-api-boilerplate.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snanilim/node-api-boilerplate/issues"
+  },
+  "homepage": "https://github.com/snanilim/node-api-boilerplate#readme"
+}
