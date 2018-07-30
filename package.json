@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/snanilim/node-api-boilerplate/issues"
   },
-  "homepage": "https://github.com/snanilim/node-api-boilerplate#readme"
+  "homepage": "https://github.com/snanilim/node-api-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^4.16.2"
+  }
 }
