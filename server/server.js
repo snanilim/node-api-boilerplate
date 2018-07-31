@@ -1,6 +1,10 @@
 const http = require('http');
-const app  = require('./app/app');
+const app  = require('./config/app');
+const env  = require('./config/env');
 
-app.listen(3000, function(){
-    console.log("app start");
+
+
+http.createServer(app).listen(8000,function(req, res){
+    var aaa = env.env;
+    console.log(development.port);
 });
