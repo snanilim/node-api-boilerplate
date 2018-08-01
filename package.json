@@ -4,6 +4,7 @@
   "description": "node-api-boilerplate",
   "main": "server/server.js",
   "scripts": {
+    "start": "nodemon node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,9 @@
     "url": "https://github.com/snanilim/node-api-boilerplate/issues"
   },
   "homepage": "https://github.com/snanilim/node-api-boilerplate#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
   "dependencies": {
     "express": "^4.16.3"
   }

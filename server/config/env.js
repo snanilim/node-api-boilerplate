@@ -1,15 +1,21 @@
 
-var env = "development";
+const environment = "development";
 
-module.exports = {
-    env: env,
+const config = {
     development:{
-        port: 8000
+        port: 8000,
+        verssion: 'v1'
     },
     sandbox:{
-        port: 8000
+        port: 3000,
+        verssion: 'v1'
     },
     live:{
-        port: 8000
+        port: 4000,
+        verssion: 'v1'
     }
-}
+};
+
+
+
+module.exports = config[`${environment}`];
