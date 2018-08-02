@@ -20,6 +20,6 @@ const config = {
     }
 };
 
+const env = config[`${environment}`];
 
-
-module.exports = config[`${environment}`];
+module.exports = {environment, env:env};

@@ -1,6 +1,6 @@
 const http = require('http');
 const app   = require('./config/app');
-const env   = require('./config/env');
+const {env }  = require('./config/env');
 
 
 

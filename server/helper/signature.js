@@ -1,5 +1,6 @@
 const md5 = require('md5');
 const env = require('../config/env');
+const APIError = require('./message');
 
 signature = (req, res, next)=>{
     const signValue = req.headers.signature;
@@ -8,7 +9,15 @@ signature = (req, res, next)=>{
     if(value === signValue){
         next();
     }
-    res.send({"message":"Invalid signature"});
+    let convertedError = 'err';
+    convertedError = new APIError({
+        message: 'Validation Error',
+        errors: 'err.error',
+        status: 'err.status',
+        stack: 'err.stack',
+      });
+
+    res.send(convertedError);
     
 }
 
