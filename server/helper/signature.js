@@ -9,15 +9,7 @@ signature = (req, res, next)=>{
     if(value === signValue){
         next();
     }
-    let convertedError = 'err';
-    convertedError = new APIError({
-        message: 'Validation Error',
-        errors: 'err.error',
-        status: 'err.status',
-        stack: 'err.stack',
-      });
-
-    res.send(convertedError);
+    APIError(res, 401, "Unauthorized");
     
 }
 

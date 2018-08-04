@@ -21,8 +21,10 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "http-status": "^1.2.0",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "morgan": "^1.9.0"
   }
 }
