@@ -1,21 +1,7 @@
-const httpStatus = require('http-status');
-
-class ThrowError extends Error{
-    constructor({
-        message, status
-    }){
-        super(message);
-        this.status = status;
-    }
-}
-
-
-class APIError extends ThrowError{
-    constructor({
-        message, status
-    }){
-        super({message, status});
-    }
-}
-
-module.exports = APIError;
+module.exports = Object.freeze({
+    NOT_FOUND: 'Not found',
+    NOT_FOUND_CODE: 404,
+    UNAUTHORIZED: 'Token expired or invalid',
+    SIGNATURE_INVALID: 'Signature Invalid',
+    UNAUTHORIZED_CODE: 401
+});

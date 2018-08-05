@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 
 const route   = require('../routes/routes');
 const {env }    = require('../config/env');
-const signature = require('../helper/signature');
+const signature = require('../middleware/signature');
 
 
 const app = express();

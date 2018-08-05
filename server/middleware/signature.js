@@ -1,6 +1,7 @@
 const md5 = require('md5');
 const env = require('../config/env');
-const APIError = require('./message');
+const APIError = require('../helper/error');
+const constants = require('../helper/message');
 
 signature = (req, res, next)=>{
     const signValue = req.headers.signature;
@@ -10,8 +11,8 @@ signature = (req, res, next)=>{
         next();
     }
     throw new APIError({
-        message: 'Signature Is Invalid',
-        status: '401',
+        message: constants.SIGNATURE_INVALID,
+        status: constants.UNAUTHORIZED_CODE,
     });
     
 };

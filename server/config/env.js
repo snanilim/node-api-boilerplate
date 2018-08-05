@@ -20,6 +20,6 @@ const config = {
     }
 };
 
-const env = config[`${environment}`];
+const env = Object.freeze(config[`${environment}`]);
 
-module.exports = Object.freeze({environment:environment, env:env});
+module.exports = {environment:environment, env:env};
