@@ -22,4 +22,4 @@ const config = {
 
 const env = config[`${environment}`];
 
-module.exports = {environment, env:env};
+module.exports = Object.freeze({environment:environment, env:env});

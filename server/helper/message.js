@@ -1,10 +1,21 @@
 const httpStatus = require('http-status');
 
-ApiError = (res, statusCode, message) => {
-    res.status(statusCode).send({
-        status: "Error",
-        message: message
-    });
+class ThrowError extends Error{
+    constructor({
+        message, status
+    }){
+        super(message);
+        this.status = status;
+    }
 }
 
-module.exports = ApiError;
+
+class APIError extends ThrowError{
+    constructor({
+        message, status
+    }){
+        super({message, status});
+    }
+}
+
+module.exports = APIError;

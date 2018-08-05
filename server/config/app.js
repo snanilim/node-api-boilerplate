@@ -10,7 +10,7 @@ const signature = require('../helper/signature');
 const app = express();
 
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 
@@ -19,14 +19,17 @@ app.use(bodyParser.json());
 app.use(`/${env.version}`, signature, route);
 
 app.use((req, res, next) => {
+    console.log(1);
     const error = new Error("Not found");
     error.status = 404;
-    res.send({error:"notfound"});
-    // next(error);
+    // res.send({error:"notfound"});
+    next(error);
   });
 
   app.use((error, req, res, next) => {
+    console.log(2);
     res.status(error.status || 500);
+    console.error({error});
     res.json({
       error: {
         message: error.message

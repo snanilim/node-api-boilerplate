@@ -9,8 +9,11 @@ signature = (req, res, next)=>{
     if(value === signValue){
         next();
     }
-    APIError(res, 401, "Unauthorized");
+    throw new APIError({
+        message: 'Signature Is Invalid',
+        status: '401',
+    });
     
-}
+};
 
 module.exports = signature;
