@@ -1,10 +1,11 @@
 const express = require('express');
+const userController = require('./userController');
+
+
 
 const router = express.Router();
 
-router.get('/', (req, res)=>{
-    res.send({"message": "Welcome To Node Api Boilerplate"});
-});
+router.post('/sign-up', userController.signUp);
 
 
 module.exports = router;

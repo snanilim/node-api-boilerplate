@@ -1,5 +1,6 @@
 
 const environment = "development";
+exports.environment = environment;
 
 const config = {
     development:{
@@ -22,4 +23,4 @@ const config = {
 
 const env = Object.freeze(config[`${environment}`]);
 
-module.exports = {environment:environment, env:env};
+exports.env = env;

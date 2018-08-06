@@ -1,6 +1,6 @@
 const md5 = require('md5');
 const env = require('../config/env');
-const APIError = require('../helper/error');
+const APIError = require('../helper/apiError');
 const constants = require('../helper/message');
 
 signature = (req, res, next)=>{
@@ -9,11 +9,13 @@ signature = (req, res, next)=>{
     const value = md5(`${body}${env.app_key}`);
     if(value === signValue){
         next();
+    }else{
+        throw new APIError({
+            message: constants.SIGNATURE_INVALID,
+            status: constants.ACCESS_FORBIDDEN_CODE,
+        });
     }
-    throw new APIError({
-        message: constants.SIGNATURE_INVALID,
-        status: constants.UNAUTHORIZED_CODE,
-    });
+    
     
 };
 
