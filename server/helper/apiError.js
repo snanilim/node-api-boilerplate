@@ -1,20 +1,18 @@
-const httpStatus = require('http-status');
-
-class ThrowError extends Error{
+class ThrowError extends Error {
     constructor({
-        message, status
-    }){
+        message, status,
+    }) {
         super(message);
         this.status = status;
     }
 }
 
 
-class APIError extends ThrowError{
+class APIError extends ThrowError {
     constructor({
-        message, status
-    }){
-        super({message, status});
+        message, status,
+    }) {
+        super({ message, status });
     }
 }
 

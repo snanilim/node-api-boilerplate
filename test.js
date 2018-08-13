@@ -1,17 +1,16 @@
-class animal{
-    constructor(message){
+class animal {
+    constructor(message) {
         this.message = message;
     }
 }
 
 
-class cat extends animal{
-    constructor({message}){
-        super({message});
+class Cat extends animal {
+    constructor({ message }) {
+        super({ message });
     }
-    
 }
 
-var pet = new cat({message:'messagessss'});
+const pet = new Cat({ message: 'messagessss' });
 
 console.log(pet.message);

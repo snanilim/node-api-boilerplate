@@ -1,4 +1,4 @@
-const {environment   }  = require('../config/env');
+const { environment } = require('../config/env');
 const constants = require('./message');
 const APIError = require('./apiError');
 
@@ -8,10 +8,10 @@ const errorHandler = (err, req, res, next) => {
             message: err.message,
             errors: err.errors,
             stack: err.stack,
-        }
+        },
     };
 
-    if(environment !== 'development'){
+    if (environment !== 'development') {
         delete errorMessage.error.stack;
     }
 
@@ -21,8 +21,6 @@ const errorHandler = (err, req, res, next) => {
 };
 
 exports.errorHandler = errorHandler;
-
-
 
 exports.notFound = (req, res, next) => {
     const err = new APIError({

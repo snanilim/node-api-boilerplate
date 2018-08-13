@@ -1,0 +1,22 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "rules": {
+        "indent":"off",
+        "semi": "error",
+        "import/no-dynamic-require": 0,
+        "global-require":"off",
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "local",
+                "args": "none"
+            }
+        ]
+    }
+}
