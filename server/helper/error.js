@@ -1,6 +1,7 @@
 const { environment } = require('../config/env');
 const constants = require('./message');
 const APIError = require('./apiError');
+const logger = require('../config/winston');
 
 const errorHandler = (err, req, res, next) => {
     const errorMessage = {
@@ -14,6 +15,8 @@ const errorHandler = (err, req, res, next) => {
     if (environment !== 'development') {
         delete errorMessage.error.stack;
     }
+
+    logger.info({ status: err.status, message: errorMessage });
 
     res.status(err.status || 500);
     res.json(errorMessage);
