@@ -1,0 +1,20 @@
+
+version: '2'
+
+services:
+  node-api-docker:
+    build: .
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/node-api-docker
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    
