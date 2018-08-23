@@ -31,3 +31,12 @@ exports.checkUser = async (data) => {
         throw error;
     }
 };
+
+exports.updateUser = async (userId, data) => {
+    try {
+       const updateUser = await User.findByIdAndUpdate(userId, { $set: data });
+       return updateUser;
+    } catch (error) {
+        throw error;
+    }
+};

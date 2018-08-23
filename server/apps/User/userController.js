@@ -3,7 +3,7 @@ const moment = require('moment');
 const { validator } = require('../../schema/validator');
 const { errorHandler } = require('../../helper/error');
 const { env } = require('../../config/env');
-const { saveNewUser, checkUser } = require('./userModel');
+const { saveNewUser, checkUser, updateUser } = require('./userModel');
 
 const generateToken = (resSave) => {
     const payload = {
@@ -33,7 +33,19 @@ exports.logIn = async (req, res, next) => {
         await validator('loginSchema', data);
         const resCheckUser = await checkUser(data);
         const msg = { msg: 'Well Done! You successfully logged in to this website 🤗' };
-        return res.send({ token: generateToken(resCheckUser), user: resCheckUser.toJSON(), msg });
+        return res.send({ token: generateToken(resCheckUser), user: resCheckUser, msg });
+    } catch (error) {
+        return errorHandler(error, req, res, next);
+    }
+};
+
+exports.updateUser = async (req, res, next) => {
+    const { body: data } = req;
+    const { id: userID } = req.params;
+    try {
+        await validator('signUpSchema', data);
+        await updateUser(userID, data);
+        return res.send('user updated successfully');
     } catch (error) {
         return errorHandler(error, req, res, next);
     }
