@@ -6,7 +6,7 @@ const config = {
     development: {
         port: 3000,
         version: 'v1',
-        mongo: 'mongodb://172.20.0.1:27017/node-api-boilerplate',
+        mongo: 'mongodb://localhost:27017/node-api-boilerplate',
         token_secret: '8788dc07d30444747841d8c67d807294',
         app_key: '8788dc07d30444747841d8c67d807294',
     },

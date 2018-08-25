@@ -1,7 +1,8 @@
 const jwt = require('jsonwebtoken');
 const moment = require('moment');
 const { validator } = require('../../schema/validator');
-const { errorHandler } = require('../../helper/error');
+const { errorHandler } = require('../../helper/resError');
+const { resMsg } = require('../../helper/resMsg');
 const { env } = require('../../config/env');
 const { saveNewUser, checkUser, updateUser } = require('./userModel');
 
@@ -20,8 +21,9 @@ exports.signUp = async (req, res, next) => {
     try {
         await validator('signUpSchema', data);
         const resSaveUser = await saveNewUser(data);
-        const msg = { msg: 'user created successfully' };
-        return res.send({ token: generateToken(resSaveUser), user: resSaveUser, msg });
+        const msg = 'user created successfully';
+        const message = { token: generateToken(resSaveUser), msg };
+        return resMsg(message, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);
     }
@@ -32,8 +34,10 @@ exports.logIn = async (req, res, next) => {
     try {
         await validator('loginSchema', data);
         const resCheckUser = await checkUser(data);
-        const msg = { msg: 'Well Done! You successfully logged in to this website 🤗' };
-        return res.send({ token: generateToken(resCheckUser), user: resCheckUser, msg });
+        console.log(resCheckUser);
+        const msg = 'Well Done! You successfully logged in to this website 🤗';
+        const message = { token: generateToken(resCheckUser), msg };
+        return resMsg(message, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);
     }

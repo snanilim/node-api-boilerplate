@@ -1,4 +1,5 @@
 const User = require('./userSchema');
+const ThrowError = require('../../helper/throwError');
 
 exports.saveNewUser = async (data) => {
     try {
@@ -18,14 +19,20 @@ exports.checkUser = async (data) => {
     try {
         const user = await User.findOne({ email: data.email });
         if (!user) {
-            return { msg: `The email address ${data.email} is not associated with any account. Double-check your email address and try again.` };
+            const msg = `The email address ${data.email} is not associated with any account. Double-check your email address and try again.`;
+            throw new ThrowError({
+                message: msg,
+                status: 404,
+            });
         }
-        user.comparePassword(data.password, (err, isMatch) => {
-            if (!isMatch) {
-                return { msg: 'Invalid email or password' };
-            }
-            return user;
-        });
+        const isMatch = await user.comparePassword(data.password);
+        if (!isMatch) {
+            const msg = 'Invalid email or password';
+            throw new ThrowError({
+                message: msg,
+                status: 404,
+            });
+        }
         return user;
     } catch (error) {
         throw error;

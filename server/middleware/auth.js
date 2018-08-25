@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const { env } = require('../config/env');
 
-const authorizeUser = (req, res, next) => {
+const isAuthenticated = (req, res, next) => {
     // const tokenValue = req.headers.authorization;
     const token = (req.headers.authorization && req.headers.authorization.split(' ')[1]) || req.cookies.token;
     try {
@@ -12,4 +12,4 @@ const authorizeUser = (req, res, next) => {
     }
 };
 
-module.exports = authorizeUser;
+module.exports = isAuthenticated;

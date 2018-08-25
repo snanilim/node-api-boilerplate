@@ -1,8 +1,8 @@
 Arguments: 
-  /home/nilim/.nvm/versions/node/v8.9.4/lib/node_modules/node/lib/node_modules/node/bin/node /home/nilim/.nvm/versions/node/v8.9.4/bin/yarn add app-root-path --save
+  /home/nilim/.nvm/versions/node/v8.9.4/lib/node_modules/node/lib/node_modules/node/bin/node /home/nilim/.nvm/versions/node/v8.9.4/bin/yarn add helmet --save
 
 PATH: 
-  /home/nilim/.nvm/versions/node/v8.9.4/bin:/home/nilim/bin:/home/nilim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+  /home/nilim/bin:/home/nilim/.local/bin:/home/nilim/.nvm/versions/node/v8.9.4/bin:/home/nilim/bin:/home/nilim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 Yarn version: 
   1.9.4
@@ -14,8 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+  Error: EACCES: permission denied, mkdir '/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/babel-code-frame/node_modules/ansi-styles'
 
 npm manifest: 
   {
@@ -45,6 +44,7 @@ npm manifest:
     },
     "dependencies": {
       "ajv": "^6.5.2",
+      "app-root-path": "^2.1.0",
       "bcryptjs": "^2.4.3",
       "body-parser": "^1.18.3",
       "express": "^4.16.3",

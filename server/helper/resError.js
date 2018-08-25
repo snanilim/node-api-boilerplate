@@ -1,19 +1,17 @@
 const { environment } = require('../config/env');
-const constants = require('./message');
-const APIError = require('./apiError');
+const constants = require('./constMsg');
+const ThrowError = require('./throwError');
 const logger = require('../config/winston');
 
 const errorHandler = (err, req, res, next) => {
     const errorMessage = {
-        error: {
-            message: err.message,
-            errors: err.errors,
-            stack: err.stack,
-        },
+        message: err.message,
+        errors: err.errors,
+        stack: err.stack,
     };
 
     if (environment !== 'development') {
-        delete errorMessage.error.stack;
+        delete errorMessage.stack;
     }
 
     logger.info({ status: err.status, message: errorMessage });
@@ -26,7 +24,7 @@ const errorHandler = (err, req, res, next) => {
 exports.errorHandler = errorHandler;
 
 exports.notFound = (req, res, next) => {
-    const err = new APIError({
+    const err = new ThrowError({
         message: constants.NOT_FOUND,
         status: constants.NOT_FOUND_CODE,
     });
