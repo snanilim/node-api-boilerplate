@@ -16,6 +16,7 @@ const app = express();
 app.use(helmet());
 app.use(morgan('combined', { stream: winston.end }));
 app.use(morgan('dev'));
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
