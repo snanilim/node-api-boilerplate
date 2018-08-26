@@ -4,7 +4,7 @@ exports.environment = environment;
 
 const config = {
     development: {
-        port: 3000,
+        port: 4000,
         version: 'v1',
         mongo: 'mongodb://localhost:27017/node-api-boilerplate',
         token_secret: '8788dc07d30444747841d8c67d807294',

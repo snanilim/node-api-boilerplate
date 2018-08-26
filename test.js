@@ -24,6 +24,7 @@
 
 // foo();
 // console.log(a);
+<<<<<<< HEAD
 // const inc = n => n + 1;
 // const double = n => n + 1;
 // console.log(inc(double(2)));
@@ -33,3 +34,8 @@
 // test('adds value', () => {
 //     expect(sum(1, 2)).toBe(3);
 // });
+=======
+const inc = n => n + 1;
+const double = n => n + 1;
+console.log(inc(double(2)));
+>>>>>>> 4dca75e5c4ea44428a27b9ad1378dfaf0a99891a
