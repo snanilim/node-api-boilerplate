@@ -5,7 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "nodemon server/server.js",
-    "test": "jest server/apps/User/"
+    "test": "jest $(find server -name '*test.js')"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.5.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "ajv": "^6.5.2",

@@ -5,7 +5,7 @@ const userRoute = require('../apps/User/userRoute');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send({ message: 'Welcome To Node Api Boilerplate' });
+    res.status(200).send({ message: 'Welcome To Node Api Boilerplate' });
 });
 
 router.use('/', userRoute);
