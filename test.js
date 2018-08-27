@@ -33,7 +33,6 @@
 // test('adds value', () => {
 //     expect(sum(1, 2)).toBe(3);
 // });
-
 // const inc = n => n + 1;
 // const double = n => n + 1;
 // console.log(inc(double(2)));
