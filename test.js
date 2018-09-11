@@ -73,63 +73,16 @@
 // final();
 
 // console.log('before');
-class PromiseSimple {
-    constructor(executionFunction) {
-        this.promiseChain = [];
-        this.handleError = () => {};
 
-        this.onResolve = this.onResolve.bind(this);
-        this.onReject = this.onReject.bind(this);
+// const g = n => n + 1;
+// const f = x => x + 1;
 
-        executionFunction(this.onResolve, this.onReject);
-    }
+// const doSum = x => f(g(x));
 
-    then(onResolve) {
-        this.promiseChain.push(onResolve);
-        return this;
-    }
+// console.log(doSum(20));
 
-    catch(handleError) {
-        this.handleError.push(handleError);
-        return this;
-    }
-
-    onResolve(value) {
-        let storeValue = value;
-
-        try {
-            this.promiseChain.forEach((nextFunction) => {
-                storeValue = nextFunction(storeValue);
-            });
-        } catch (error) {
-            this.promiseChain = [];
-            this.onReject(error);
-        }
-    }
-
-    onReject(error) {
-        this.handleError(error);
-    }
-}
-
-fakeApiBackend = () => {
-    const user = {
-      username: 'treyhuffine',
-      favoriteNumber: 42,
-      profile: 'https://gitconnected.com/treyhuffine'
-    };
-    // Introduce a randomizer to simulate the
-    // the probability of encountering an error
-    if (Math.random() > 0.05) {
-      return { 
-        data: user, 
-        statusCode: 200,
-      };
-    }
-    const error = {
-    statusCode: 404,
-    message: 'Could not find user',
-    error: 'Not Found',
-    };
-    return error;
-  };
+// const trace = label => value => dalue => {
+//     console.log(`${ label }: ${ value }`);
+//     return dalue;
+//   };
+// trace('aaa')('bbbb')('ccc');
