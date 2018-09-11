@@ -86,3 +86,22 @@
 //     return dalue;
 //   };
 // trace('aaa')('bbbb')('ccc');
+
+const peoples = [
+    { name: 'John Doe', age: 16 },
+    { name: 'Thomas Calls', age: 19 },
+    { name: 'Liam Smith', age: 20 },
+    { name: 'Jessy Pinkman', age: 18 },
+];
+
+const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
+
+const filterPeople = () => {
+    const result = peoples.reduce((people) => {
+        const aaa = coffeeLovers.includes(people.name) && people;
+        return aaa;
+    });
+    return result;
+};
+
+console.log(filterPeople());
