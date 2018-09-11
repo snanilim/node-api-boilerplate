@@ -72,64 +72,18 @@
 
 // final();
 
-// console.log('before');
-class PromiseSimple {
-    constructor(executionFunction) {
-        this.promiseChain = [];
-        this.handleError = () => {};
+const peoples = [
+    { name: 'John Doe', age: 16 },
+    { name: 'Thomas Calls', age: 19 },
+    { name: 'Liam Smith', age: 20 },
+    { name: 'Jessy Pinkman', age: 18 },
+];
 
-        this.onResolve = this.onResolve.bind(this);
-        this.onReject = this.onReject.bind(this);
+const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
 
-        executionFunction(this.onResolve, this.onReject);
-    }
+const filterPeople = () => {
+    const result = peoples.map((people) => coffeeLovers.includes(people.name) ? people : '');
+    return result;
+};
 
-    then(onResolve) {
-        this.promiseChain.push(onResolve);
-        return this;
-    }
-
-    catch(handleError) {
-        this.handleError.push(handleError);
-        return this;
-    }
-
-    onResolve(value) {
-        let storeValue = value;
-
-        try {
-            this.promiseChain.forEach((nextFunction) => {
-                storeValue = nextFunction(storeValue);
-            });
-        } catch (error) {
-            this.promiseChain = [];
-            this.onReject(error);
-        }
-    }
-
-    onReject(error) {
-        this.handleError(error);
-    }
-}
-
-fakeApiBackend = () => {
-    const user = {
-      username: 'treyhuffine',
-      favoriteNumber: 42,
-      profile: 'https://gitconnected.com/treyhuffine'
-    };
-    // Introduce a randomizer to simulate the
-    // the probability of encountering an error
-    if (Math.random() > 0.05) {
-      return { 
-        data: user, 
-        statusCode: 200,
-      };
-    }
-    const error = {
-    statusCode: 404,
-    message: 'Could not find user',
-    error: 'Not Found',
-    };
-    return error;
-  };
+console.log(filterPeople());
