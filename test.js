@@ -82,7 +82,7 @@ const peoples = [
 const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
 
 const filterPeople = () => {
-    const result = peoples.map((people) => coffeeLovers.includes(people.name) ? people : '');
+    const result = peoples.map(people => coffeeLovers.includes(people.name) ? people : '');
     return result;
 };
 
