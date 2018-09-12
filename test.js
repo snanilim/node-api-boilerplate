@@ -72,6 +72,21 @@
 
 // final();
 
+// console.log('before');
+
+// const g = n => n + 1;
+// const f = x => x + 1;
+
+// const doSum = x => f(g(x));
+
+// console.log(doSum(20));
+
+// const trace = label => value => dalue => {
+//     console.log(`${ label }: ${ value }`);
+//     return dalue;
+//   };
+// trace('aaa')('bbbb')('ccc');
+
 const peoples = [
     { name: 'John Doe', age: 16 },
     { name: 'Thomas Calls', age: 19 },
@@ -82,7 +97,19 @@ const peoples = [
 const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
 
 const filterPeople = () => {
-    const result = peoples.map(people => coffeeLovers.includes(people.name) ? people : '');
+    const result = peoples
+    .filter(people => people.age >= 18)
+    .map((people) => {
+        const item = people;
+        item.coffeeLover = coffeeLovers.includes(people.name);
+        return item;
+    })
+    .sort((a, b) => a.age - b.age)
+    .reduce((total, perItem) => {
+        const value = total + perItem.age;
+        return value;
+    }, 0);
+
     return result;
 };
 
