@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add supertest --dev
+  /home/nilim/.nvm/versions/node/v8.9.4/lib/node_modules/node/lib/node_modules/node/bin/node /home/nilim/.nvm/versions/node/v8.9.4/bin/yarn add dotenv
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+  /home/nilim/bin:/home/nilim/.local/bin:/home/nilim/.nvm/versions/node/v8.9.4/bin:/home/nilim/bin:/home/nilim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 Yarn version: 
   1.9.4
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com registry.yarnpkg.com:443
       at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
 
 npm manifest: 

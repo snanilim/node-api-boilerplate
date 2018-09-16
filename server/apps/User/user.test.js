@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../../config/app');
+const app = require('../../settings/app');
 
 test('should pass integration tests', (done) => {
     request(app)
