@@ -111,7 +111,6 @@ const filterPeople = () => {
     }, 0);
 
     return result;
-    
 };
 
 console.log(filterPeople());
