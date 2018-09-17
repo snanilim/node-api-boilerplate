@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 require('dotenv').config();
 const config = require('config');
-const log = require('debug')('app');
+const log = require('debug')('log:app');
 
 const route = require('../routes/routes');
 const signature = require('../middleware/signature');
@@ -15,7 +15,8 @@ const app = express();
 
 log(`node env: ${process.env.NODE_ENV}`);
 log(`apps: ${app.get('env')}`);
-log(config.get('version'));
+log(config.util.getEnv('NODE_ENV'));
+log(config.util.getEnv('NODE_CONFIG'));
 
 // app.use(winston.info);
 app.use(helmet());

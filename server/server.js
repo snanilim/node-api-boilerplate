@@ -1,5 +1,5 @@
 const config = require('config');
-const log = require('debug')('http');
+const log = require('debug')('log:http');
 const http = require('http');
 const app = require('./settings/app');
 const mongo = require('./settings/db');
