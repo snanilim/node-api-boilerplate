@@ -3,7 +3,7 @@ const moment = require('moment');
 const { validator } = require('../../schema/validator');
 const { errorHandler } = require('../../helper/resError');
 const { resMsg } = require('../../helper/resMsg');
-const { env } = require('../../config/env');
+const { env } = require('../../settings/env');
 const { saveNewUser, checkUser, updateUser } = require('./userModel');
 
 const generateToken = (resSave) => {

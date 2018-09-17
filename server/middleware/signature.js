@@ -1,8 +1,8 @@
 const md5 = require('md5');
-const env = require('../config/env');
+const env = require('../settings/env');
 const ThrowError = require('../helper/throwError');
 const constants = require('../helper/constMsg');
-const logger = require('../config/winston');
+const logger = require('../settings/winston');
 
 const signature = (req, res, next) => {
     logger.info({ status: 'start', message: req.body });

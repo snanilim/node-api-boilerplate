@@ -1,7 +1,7 @@
-const { environment } = require('../config/env');
+const { environment } = require('../settings/env');
 const constants = require('./constMsg');
 const ThrowError = require('./throwError');
-const logger = require('../config/winston');
+const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
     const errorMessage = {

@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { env } = require('../config/env');
+const { env } = require('../settings/env');
 
 const isAuthenticated = (req, res, next) => {
     // const tokenValue = req.headers.authorization;

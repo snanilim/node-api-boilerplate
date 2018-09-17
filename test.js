@@ -129,6 +129,7 @@ const sumReducer = (state = {}, action = {}) => {
     }
 };
 
+
 const actions = [
     { type: 'ADD_VALUE', payload: { value: 1 } },
     { type: 'ADD_VALUE', payload: { value: 1 } },
