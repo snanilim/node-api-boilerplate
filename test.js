@@ -87,31 +87,54 @@
 //   };
 // trace('aaa')('bbbb')('ccc');
 
-const peoples = [
-    { name: 'John Doe', age: 16 },
-    { name: 'Thomas Calls', age: 19 },
-    { name: 'Liam Smith', age: 20 },
-    { name: 'Jessy Pinkman', age: 18 },
-];
+// const peoples = [
+//     { name: 'John Doe', age: 16 },
+//     { name: 'Thomas Calls', age: 19 },
+//     { name: 'Liam Smith', age: 20 },
+//     { name: 'Jessy Pinkman', age: 18 },
+// ];
 
-const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
+// const coffeeLovers = ['John Doe', 'Liam Smith', 'Jessy Pinkman'];
 
-const filterPeople = () => {
-    const result = peoples
-    .filter(people => people.age >= 18)
-    .map((people) => {
-        const item = people;
-        item.coffeeLover = coffeeLovers.includes(people.name);
-        return item;
-    })
-    .sort((a, b) => a.age - b.age)
-    .reduce((total, perItem) => {
-        const value = total + perItem.age;
-        return value;
-    }, 0);
+// const filterPeople = () => {
+//     const result = peoples
+//     .filter(people => people.age >= 18)
+//     .map((people) => {
+//         const item = people;
+//         item.coffeeLover = coffeeLovers.includes(people.name);
+//         return item;
+//     })
+//     .sort((a, b) => a.age - b.age)
+//     .reduce((total, perItem) => {
+//         const value = total + perItem.age;
+//         return value;
+//     }, 0);
 
-    return result;
-    
+//     return result;
+// };
+
+// console.log(filterPeople());
+
+const ADD_VALUE = 'ADD_VALUE';
+
+const sumReducer = (state = {}, action = {}) => {
+    const { type, payload } = action;
+
+    switch (type) {
+        case ADD_VALUE:
+            // const value = state + payload.value;
+            console.log(state);
+            return [...state, { value: payload.value }];
+        default: return state;
+    }
 };
 
-console.log(filterPeople());
+const actions = [
+    { type: 'ADD_VALUE', payload: { value: 1 } },
+    { type: 'ADD_VALUE', payload: { value: 1 } },
+    { type: 'ADD_VALUE', payload: { value: 1 } },
+];
+
+const result = actions.reduce(sumReducer, {});
+
+console.log(result);
