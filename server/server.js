@@ -1,3 +1,4 @@
+require('dotenv').config();
 const config = require('config');
 const log = require('debug')('log:http');
 const http = require('http');

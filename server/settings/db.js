@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
-const { environment, env } = require('./env');
+const config = require('config');
 
 mongoose.connection.on('error', (err) => {
     console.log(`Mongo Error: ${err}`);
     process.exit(-1);
 });
 
-if (environment === 'development') {
+if (config.util.getEnv('NODE_ENV') === 'development') {
     mongoose.set('debug', true);
 }
 
 exports.connect = () => {
-    mongoose.connect(env.mongo, {
+    mongoose.connect(config.get('mongo_uri'), {
         keepAlive: 1,
         useNewUrlParser: true,
     });

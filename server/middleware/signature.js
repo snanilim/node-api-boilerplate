@@ -1,5 +1,5 @@
 const md5 = require('md5');
-const env = require('../settings/env');
+const config = require('config');
 const ThrowError = require('../helper/throwError');
 const constants = require('../helper/constMsg');
 const logger = require('../settings/winston');
@@ -10,9 +10,9 @@ const signature = (req, res, next) => {
     const { body: data } = req;
     const dataStr = JSON.stringify(data);
     const dataTrim = dataStr.trim();
-    const createdSign = md5(`${dataTrim}${env.app_key}`);
+    const createdSign = md5(`${dataTrim}${config.get('app_key')}`);
 
-    if (env.environment === 'development') {
+    if (config.util.getEnv('NODE_ENV') === 'development') {
         return next();
     }
 

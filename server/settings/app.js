@@ -2,7 +2,6 @@ const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-require('dotenv').config();
 const config = require('config');
 const log = require('debug')('log:app');
 
@@ -13,10 +12,7 @@ const winston = require('./winston');
 
 const app = express();
 
-log(`node env: ${process.env.NODE_ENV}`);
-log(`apps: ${app.get('env')}`);
-log(config.util.getEnv('NODE_ENV'));
-log(config.util.getEnv('NODE_CONFIG'));
+log(config.get('app_key'));
 
 // app.use(winston.info);
 app.use(helmet());

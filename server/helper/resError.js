@@ -1,4 +1,4 @@
-const { environment } = require('../settings/env');
+const config = require('config');
 const constants = require('./constMsg');
 const ThrowError = require('./throwError');
 const logger = require('../settings/winston');
@@ -10,7 +10,7 @@ const errorHandler = (err, req, res, next) => {
         stack: err.stack,
     };
 
-    if (environment !== 'development') {
+    if (config.util.getEnv('NODE_ENV') !== 'development') {
         delete errorMessage.stack;
     }
 

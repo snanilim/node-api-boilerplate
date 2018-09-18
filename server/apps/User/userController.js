@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken');
 const moment = require('moment');
+const config = require('config');
 const { validator } = require('../../schema/validator');
 const { errorHandler } = require('../../helper/resError');
 const { resMsg } = require('../../helper/resMsg');
-const { env } = require('../../settings/env');
 const { saveNewUser, checkUser, updateUser } = require('./userModel');
 
 const generateToken = (resSave) => {
@@ -13,7 +13,7 @@ const generateToken = (resSave) => {
         iat: moment().unix(),
         exp: moment().add(7, 'days').unix(),
     };
-    return jwt.sign(payload, env.token_secret);
+    return jwt.sign(payload, config.get('token_secret'));
 };
 
 exports.signUp = async (req, res, next) => {

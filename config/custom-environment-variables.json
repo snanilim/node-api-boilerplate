@@ -1,0 +1,5 @@
+{
+    "token_secret": "token_secret",
+    "app_key": "app_key",
+    "mongo_uri": "MONGO_URI"
+}
