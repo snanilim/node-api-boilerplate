@@ -9,11 +9,56 @@ const schemaOptions = {
     },
   };
 
-
+const roles = ['user', 'admin'];
 const userSchema = mongoose.Schema({
-    userName: String,
-    email: String,
-    password: String,
+    name: {
+        type: String,
+        require: true,
+        maxlength: 50,
+        minlength: 3,
+        trim: true,
+    },
+    phone: {
+        type: String,
+        maxlength: 13,
+        minlength: 11,
+        trim: true,
+    },
+    email: {
+        type: String,
+        match: /^\S+@\S+\.\S+$/,
+        require: true,
+        maxlength: 100,
+        minlength: 3,
+        trim: true,
+        unique: true,
+        lowercase: true,
+    },
+    password: {
+        type: String,
+        require: true,
+        maxlength: 128,
+        minlength: 6,
+        trim: true,
+    },
+    service: {
+        facebook: String,
+        google: String,
+    },
+    role: {
+        type: String,
+        enum: roles,
+        default: 'user',
+        trim: true,
+    },
+    picture: {
+        type: String,
+        trim: true,
+    },
+    gender: {
+        type: String,
+        enum: ['male', 'female'],
+    },
 }, schemaOptions);
 
 userSchema.pre('save', async function save(next) {
