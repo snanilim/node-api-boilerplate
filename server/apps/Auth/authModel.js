@@ -1,4 +1,4 @@
-const User = require('./userSchema');
+const User = require('./authSchema');
 const ThrowError = require('../../helper/throwError');
 
 exports.saveNewUser = async (data) => {
@@ -9,6 +9,8 @@ exports.saveNewUser = async (data) => {
             password: data.password,
         });
         const resSave = await user.save();
+        const userTransformed = user.transform();
+        console.log(userTransformed);
         return resSave;
     } catch (error) {
         throw error;

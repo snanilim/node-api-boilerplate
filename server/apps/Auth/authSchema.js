@@ -74,6 +74,17 @@ userSchema.pre('save', async function save(next) {
 });
 
 userSchema.method({
+    transform() {
+        const transformed = {};
+        const fields = ['id', 'name', 'email', 'picture', 'role', 'createdAt'];
+
+        fields.forEach((field) => {
+            transformed[field] = this[field];
+        });
+
+        return transformed;
+    },
+
     async comparePassword(password) {
         return bcrypt.compare(password, this.password);
     },
