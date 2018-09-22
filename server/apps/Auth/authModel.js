@@ -10,7 +10,6 @@ exports.saveNewUser = async (data) => {
         });
         const resSave = await user.save();
         const userTransformed = user.transform();
-        console.log(userTransformed);
         return resSave;
     } catch (error) {
         throw error;

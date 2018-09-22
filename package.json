@@ -4,7 +4,7 @@
   "description": "node-api-boilerplate",
   "main": "server/server.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "DEBUG=log:* nodemon server/server.js",
     "test": "jest $(find server -name '*test.js')"
   },
   "repository": {
