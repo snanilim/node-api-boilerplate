@@ -32,7 +32,6 @@
     },
     "required": [
       "email",
-      "userName",
       "password"
     ]
   }

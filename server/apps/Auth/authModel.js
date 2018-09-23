@@ -4,13 +4,13 @@ const ThrowError = require('../../helper/throwError');
 exports.saveNewUser = async (data) => {
     try {
         const user = new User({
-            userName: data.userName,
             email: data.email,
             password: data.password,
         });
-        const resSave = await user.save();
-        const userTransformed = user.transform();
-        return resSave;
+        const resSaveUser = await user.save();
+        const userInfo = resSaveUser.userInfo();
+        const token = generateToken(resSaveUser, resSaveUser.token);
+        return userInfo;
     } catch (error) {
         throw error;
     }
@@ -21,10 +21,7 @@ exports.checkUser = async (data) => {
         const user = await User.findOne({ email: data.email });
         if (!user) {
             const msg = `The email address ${data.email} is not associated with any account. Double-check your email address and try again.`;
-            throw new ThrowError({
-                message: msg,
-                status: 404,
-            });
+            throw new ThrowError({ message: msg, status: 404 });
         }
         const isMatch = await user.comparePassword(data.password);
         if (!isMatch) {

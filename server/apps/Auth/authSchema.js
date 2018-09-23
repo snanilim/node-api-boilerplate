@@ -1,5 +1,8 @@
+const jwt = require('jsonwebtoken');
+const moment = require('moment');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
+const config = require('config');
 
 
 const schemaOptions = {
@@ -74,15 +77,24 @@ userSchema.pre('save', async function save(next) {
 });
 
 userSchema.method({
-    transform() {
-        const transformed = {};
+    userInfo() {
+        const userInfo = {};
         const fields = ['id', 'name', 'email', 'picture', 'role', 'createdAt'];
 
         fields.forEach((field) => {
-            transformed[field] = this[field];
+            userInfo[field] = this[field];
         });
 
-        return transformed;
+        return userInfo;
+    },
+
+    token() {
+        const payload = {
+            sub: this.id,
+            iat: moment().unix(),
+            exp: moment().add(config.get('jwtTimeExpire'), 'minutes').unix(),
+        };
+        return jwt.sign(payload, config.get('token_secret'));
     },
 
     async comparePassword(password) {

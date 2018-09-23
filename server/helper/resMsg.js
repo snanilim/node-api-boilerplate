@@ -1,10 +1,6 @@
-exports.resMsg = (newMsg, status, res, next) => {
-    const message = {
-        message: {
-            result: 'Success',
-            msg: newMsg,
-        },
-    };
+exports.resMsg = (sendMsg, status, res, next) => {
+    const message = sendMsg;
+    message.result = 'success';
 
     res.status(status);
     res.json(message);

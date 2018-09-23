@@ -5,12 +5,11 @@ const { errorHandler } = require('../../helper/resError');
 const { resMsg } = require('../../helper/resMsg');
 const { saveNewUser, checkUser, updateUser } = require('./authModel');
 
-const generateToken = (resSave) => {
+const accessToken = (user) => {
     const payload = {
-        iss: 'my.domain.com',
-        sub: 'user.id',
+        sub: user.id,
         iat: moment().unix(),
-        exp: moment().add(7, 'days').unix(),
+        exp: moment().add(config.get('jwtTimeExpire'), 'minutes').unix(),
     };
     return jwt.sign(payload, config.get('token_secret'));
 };
@@ -19,9 +18,9 @@ exports.signUp = async (req, res, next) => {
     const { body: data } = req;
     try {
         const resSaveUser = await saveNewUser(data);
-        const msg = 'user created successfully';
-        const message = { token: generateToken(resSaveUser), msg };
-        return resMsg(message, 201, res, next);
+        const message = 'user created successfully';
+        const sendMessage = { token: accessToken(resSaveUser), user: resSaveUser, message };
+        return resMsg(sendMessage, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);
     }
@@ -32,7 +31,7 @@ exports.logIn = async (req, res, next) => {
     try {
         const resCheckUser = await checkUser(data);
         const msg = 'Well Done! You successfully logged in to this website 🤗';
-        const message = { token: generateToken(resCheckUser), msg };
+        const message = { token: accessToken(resCheckUser), msg };
         return resMsg(message, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);
