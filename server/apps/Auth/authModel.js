@@ -1,5 +1,18 @@
+const moment = require('moment');
+const config = require('config');
+
 const User = require('./authSchema');
 const ThrowError = require('../../helper/throwError');
+
+const generateToken = (user, accessToken) => {
+    const tokenType = 'Bearer';
+    const refreshToken = RefreshToken.generate(user).token;
+    const expireTime = moment().add(config.get('jwtTimeExpire'), 'minutes').unix();
+
+    return {
+        tokenType, refreshToken, accessToken, expireTime,
+    };
+};
 
 exports.saveNewUser = async (data) => {
     try {
