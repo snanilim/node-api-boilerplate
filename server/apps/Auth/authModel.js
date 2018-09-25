@@ -7,7 +7,7 @@ const ThrowError = require('../../helper/throwError');
 
 const generateToken = (user, accessToken) => {
     const tokenType = 'Bearer';
-    const refreshToken = RefreshToken.generate(user).token;
+    const refreshToken = RefreshToken.generate(user).token; // its only reply token from full obj
     const expireTime = moment().add(config.get('jwtTimeExpire'), 'minutes').unix();
 
     return {
@@ -23,7 +23,7 @@ exports.saveNewUser = async (data) => {
         });
         const resSaveUser = await user.save();
         const userInfo = resSaveUser.userInfo();
-        const token = generateToken(resSaveUser, resSaveUser.token);
+        const token = generateToken(resSaveUser, resSaveUser.token());
         return { token, user: userInfo };
     } catch (error) {
         throw User.checkDuplicateEmail(error);

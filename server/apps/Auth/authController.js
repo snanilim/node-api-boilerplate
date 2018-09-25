@@ -19,7 +19,7 @@ exports.signUp = async (req, res, next) => {
     try {
         const resSaveUser = await saveNewUser(data);
         const message = 'User created successfully';
-        const sendMessage = { resSaveUser, message };
+        const sendMessage = { user: resSaveUser.user, token: resSaveUser.token, message };
         return resMsg(sendMessage, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);

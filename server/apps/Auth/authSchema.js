@@ -113,7 +113,7 @@ userSchema.statics = {
                     location: 'body',
                     message: ['email already exist'],
                 }],
-                status: 404,
+                status: 409,
                 stack: error.stack,
                 isPublic: true,
             });

@@ -25,14 +25,15 @@ const refreshTokenSchema = new mongoose.Schema({
     },
 });
 
-const RefreshToken = mongoose.model('RefreshToken', refreshTokenSchema);
 
 refreshTokenSchema.statics = {
+
     generate(user) {
         const userId = user.id;
         const userEmail = user.email;
         const token = `${userId}.${crypto.randomBytes(40).toString('hex')}`;
         const expires = moment().add(30, 'days').toDate();
+        // eslint-disable-next-line no-use-before-define
         const tokenObj = new RefreshToken({
             token, userId, userEmail, expires,
         });
@@ -41,5 +42,5 @@ refreshTokenSchema.statics = {
     },
 };
 
-
+const RefreshToken = mongoose.model('RefreshToken', refreshTokenSchema);
 module.exports = RefreshToken;
