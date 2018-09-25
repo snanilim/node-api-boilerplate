@@ -22,11 +22,11 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
 /** Added all Route here */
 app.use(`/${config.get('version')}`, signature, route);
 
 app.use(resError.notFound);
-
 app.use(resError.errorHandler);
 
 module.exports = app;

@@ -18,8 +18,8 @@ exports.signUp = async (req, res, next) => {
     const { body: data } = req;
     try {
         const resSaveUser = await saveNewUser(data);
-        const message = 'user created successfully';
-        const sendMessage = { token: accessToken(resSaveUser), user: resSaveUser, message };
+        const message = 'User created successfully';
+        const sendMessage = { resSaveUser, message };
         return resMsg(sendMessage, 201, res, next);
     } catch (error) {
         return errorHandler(error, req, res, next);

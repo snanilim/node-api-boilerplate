@@ -4,6 +4,7 @@ const ThrowError = require('./throwError');
 const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
+    console.log('err', err);
     const errorMessage = {
         message: err.message,
         errors: err.errors,

@@ -2,6 +2,7 @@ const moment = require('moment');
 const config = require('config');
 
 const User = require('./authSchema');
+const RefreshToken = require('./refreshTokenModel');
 const ThrowError = require('../../helper/throwError');
 
 const generateToken = (user, accessToken) => {
@@ -23,9 +24,9 @@ exports.saveNewUser = async (data) => {
         const resSaveUser = await user.save();
         const userInfo = resSaveUser.userInfo();
         const token = generateToken(resSaveUser, resSaveUser.token);
-        return userInfo;
+        return { token, user: userInfo };
     } catch (error) {
-        throw error;
+        throw User.checkDuplicateEmail(error);
     }
 };
 

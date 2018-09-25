@@ -1,19 +1,30 @@
-class ThrowError extends Error {
+class ErrorExtend extends Error {
     constructor({
-        message, status,
+        message, errors, status, isPublic, stack,
     }) {
         super(message);
+        this.name = this.constructor.name;
+        this.message = message;
+        this.errors = errors;
         this.status = status;
+        this.isPublic = isPublic;
+        this.stack = stack;
     }
 }
 
 
-class APIError extends ThrowError {
+class ThrowError extends ErrorExtend {
     constructor({
-        message, status,
+        message,
+        errors,
+        status,
+        isPublic = false,
+        stack,
     }) {
-        super({ message, status });
+        super({
+            message, errors, status, isPublic, stack,
+        });
     }
 }
 
-module.exports = APIError;
+module.exports = ThrowError;

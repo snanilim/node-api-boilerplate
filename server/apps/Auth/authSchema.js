@@ -3,6 +3,7 @@ const moment = require('moment');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('config');
+const ThrowError = require('../../helper/throwError');
 
 
 const schemaOptions = {
@@ -101,6 +102,25 @@ userSchema.method({
         return bcrypt.compare(password, this.password);
     },
 });
+
+userSchema.statics = {
+    checkDuplicateEmail(error) {
+        if (error.code === 11000 && (error.name === 'BulkWriteError' || error.name === 'MongoError')) {
+            throw new ThrowError({
+                message: 'Validation Error',
+                errors: [{
+                    field: 'email',
+                    location: 'body',
+                    message: ['email already exist'],
+                }],
+                status: 404,
+                stack: error.stack,
+                isPublic: true,
+            });
+        }
+        return error;
+    },
+};
 
 const User = mongoose.model('User', userSchema);
 
