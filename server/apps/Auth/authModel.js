@@ -30,6 +30,17 @@ exports.saveNewUser = async (data) => {
     }
 };
 
+exports.login = async (userData) => {
+    try {
+        const { user, accessToken } = await User.findAndGenerateToken(userData);
+        const token = generateToken(user, accessToken);
+        const userInfo = user.userInfo();
+        return { token, user: userInfo };
+    } catch (error) {
+        throw error;
+    }
+};
+
 exports.checkUser = async (data) => {
     try {
         const user = await User.findOne({ email: data.email });

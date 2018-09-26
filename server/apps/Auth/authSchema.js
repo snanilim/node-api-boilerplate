@@ -104,6 +104,30 @@ userSchema.method({
 });
 
 userSchema.statics = {
+    async findAndGenerateToken(options) {
+        const { email, password, refreshObj } = options;
+        if (!email) throw new ThrowError({ message: 'A Email is required for generate token' });
+
+        const user = await this.findOne({ email }).exec();
+
+        const err = {
+            status: 401,
+            isPublic: true,
+        };
+
+        if (password) {
+            if (user && await user.passwordMatch(user)) {
+                return { user, accessToken: user.token() };
+            }
+            err.message = 'Invalid Email or Password';
+        } else if (refreshObj && refreshObj.userEmail === email) {
+            return { user, accessToken: user.token() };
+        } else {
+            err.message = 'Incorrect Email or Password';
+        }
+        throw new ThrowError(err);
+    },
+
     checkDuplicateEmail(error) {
         if (error.code === 11000 && (error.name === 'BulkWriteError' || error.name === 'MongoError')) {
             throw new ThrowError({
