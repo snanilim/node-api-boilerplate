@@ -27,9 +27,6 @@ const refreshTokenSchema = new mongoose.Schema({
 
 
 refreshTokenSchema.statics = {
-    async findAndGenerateToken(options) {
-        const { email, password, refreshObj } = options;
-    },
 
     generate(user) {
         const userId = user.id;

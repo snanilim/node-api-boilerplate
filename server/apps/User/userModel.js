@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('config');
 const ThrowError = require('../../helper/throwError');
+const constMsg = require('../../helper/constMsg');
 
 
 const schemaOptions = {
@@ -15,9 +16,25 @@ const schemaOptions = {
 
 const roles = ['user', 'admin'];
 const userSchema = mongoose.Schema({
+    email: {
+        type: String,
+        match: /^\S+@\S+\.\S+$/,
+        required: true,
+        maxlength: 50,
+        minlength: 3,
+        trim: true,
+        unique: true,
+        lowercase: true,
+    },
+    password: {
+        type: String,
+        required: true,
+        maxlength: 128,
+        minlength: 6,
+        trim: true,
+    },
     name: {
         type: String,
-        require: true,
         maxlength: 50,
         minlength: 3,
         trim: true,
@@ -26,23 +43,6 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlength: 13,
         minlength: 11,
-        trim: true,
-    },
-    email: {
-        type: String,
-        match: /^\S+@\S+\.\S+$/,
-        require: true,
-        maxlength: 100,
-        minlength: 3,
-        trim: true,
-        unique: true,
-        lowercase: true,
-    },
-    password: {
-        type: String,
-        require: true,
-        maxlength: 128,
-        minlength: 6,
         trim: true,
     },
     service: {
@@ -85,7 +85,6 @@ userSchema.method({
         fields.forEach((field) => {
             userInfo[field] = this[field];
         });
-
         return userInfo;
     },
 
@@ -105,39 +104,42 @@ userSchema.method({
 
 userSchema.statics = {
     async findAndGenerateToken(options) {
-        const { email, password, refreshObj } = options;
-        if (!email) throw new ThrowError({ message: 'A Email is required for generate token' });
+        try {
+            const { email, password, refreshObj } = options;
+            if (!email) throw new ThrowError({ message: constMsg.EMAIL_IS_REQUIRED });
+            const user = await this.findOne({ email }).exec();
 
-        const user = await this.findOne({ email }).exec();
+            const err = {
+                status: constMsg.UNAUTHORIZED_CODE,
+                isPublic: true,
+            };
 
-        const err = {
-            status: 401,
-            isPublic: true,
-        };
-
-        if (password) {
-            if (user && await user.passwordMatch(user)) {
+            if (password) {
+                if (user && await user.comparePassword(password)) {
+                    return { user, accessToken: user.token() };
+                }
+                err.message = constMsg.UNAUTHORIZED;
+            } else if (refreshObj && refreshObj.userEmail === email) {
                 return { user, accessToken: user.token() };
+            } else {
+                err.message = constMsg.UNAUTHORIZED;
             }
-            err.message = 'Invalid Email or Password';
-        } else if (refreshObj && refreshObj.userEmail === email) {
-            return { user, accessToken: user.token() };
-        } else {
-            err.message = 'Incorrect Email or Password';
+            throw new ThrowError(err);
+        } catch (error) {
+            throw error;
         }
-        throw new ThrowError(err);
     },
 
     checkDuplicateEmail(error) {
         if (error.code === 11000 && (error.name === 'BulkWriteError' || error.name === 'MongoError')) {
             throw new ThrowError({
-                message: 'Validation Error',
+                message: constMsg.EMAIL_EXIST,
                 errors: [{
                     field: 'email',
                     location: 'body',
-                    message: ['email already exist'],
+                    message: [constMsg.EMAIL_EXIST],
                 }],
-                status: 409,
+                status: constMsg.CONFLICT_CODE,
                 stack: error.stack,
                 isPublic: true,
             });
