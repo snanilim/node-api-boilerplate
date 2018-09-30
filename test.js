@@ -115,27 +115,52 @@
 
 // console.log(filterPeople());
 
-const ADD_VALUE = 'ADD_VALUE';
+// const ADD_VALUE = 'ADD_VALUE';
 
-const sumReducer = (state = {}, action = {}) => {
-    const { type, payload } = action;
+// const sumReducer = (state = {}, action = {}) => {
+//     const { type, payload } = action;
 
-    switch (type) {
-        case ADD_VALUE:
-            // const value = state + payload.value;
-            console.log(state);
-            return [...state, { value: payload.value }];
-        default: return state;
-    }
-};
+//     switch (type) {
+//         case ADD_VALUE:
+//             // const value = state + payload.value;
+//             console.log(state);
+//             return [...state, { value: payload.value }];
+//         default: return state;
+//     }
+// };
 
 
-const actions = [
-    { type: 'ADD_VALUE', payload: { value: 1 } },
-    { type: 'ADD_VALUE', payload: { value: 1 } },
-    { type: 'ADD_VALUE', payload: { value: 1 } },
+// const actions = [
+//     { type: 'ADD_VALUE', payload: { value: 1 } },
+//     { type: 'ADD_VALUE', payload: { value: 1 } },
+//     { type: 'ADD_VALUE', payload: { value: 1 } },
+// ];
+
+// const result = actions.reduce(sumReducer, {});
+
+// console.log(result);
+
+const listArr = [
+    { uri: 'a', id: 123, ov: 'qwerty' },
+    { uri: 'b', id: 321, ov: 'qwerty' },
+    { uri: 'c', id: 123, ov: 'qwerty' },
+    { uri: 'a', id: 321, ov: 'qwerty' },
+    { uri: 'b', id: 123, ov: 'qwerty' },
+    { uri: 'c', id: 312, ov: 'qwerty' },
+    { uri: 'a', id: 1234, ov: 'qwerty' },
+    { uri: 'b', id: 321, ov: 'qwerty' },
 ];
-
-const result = actions.reduce(sumReducer, {});
-
-console.log(result);
+const data = [];
+const filterArr = () => {
+    listArr.forEach((value) => {
+        if (typeof data[value.uri] === 'undefined') {
+            data[value.uri] = {
+                id: [],
+            };
+        }
+        // process.id.push(value.id);
+        data[value.uri].id.push(value.id);
+    });
+};
+filterArr();
+console.log(data);
