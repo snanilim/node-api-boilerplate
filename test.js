@@ -140,27 +140,55 @@
 
 // console.log(result);
 
-const listArr = [
-    { uri: 'a', id: 123, ov: 'qwerty' },
-    { uri: 'b', id: 321, ov: 'qwerty' },
-    { uri: 'c', id: 123, ov: 'qwerty' },
-    { uri: 'a', id: 321, ov: 'qwerty' },
-    { uri: 'b', id: 123, ov: 'qwerty' },
-    { uri: 'c', id: 312, ov: 'qwerty' },
-    { uri: 'a', id: 1234, ov: 'qwerty' },
-    { uri: 'b', id: 321, ov: 'qwerty' },
-];
-const data = [];
-const filterArr = () => {
-    listArr.forEach((value) => {
-        if (typeof data[value.uri] === 'undefined') {
-            data[value.uri] = {
-                id: [],
-            };
-        }
-        // process.id.push(value.id);
-        data[value.uri].id.push(value.id);
-    });
-};
-filterArr();
-console.log(data);
+// const listArr = [
+//     { uri: 'a', id: 123, ov: 'qwerty' },
+//     { uri: 'b', id: 321, ov: 'qwerty' },
+//     { uri: 'c', id: 123, ov: 'qwerty' },
+//     { uri: 'a', id: 321, ov: 'qwerty' },
+//     { uri: 'b', id: 123, ov: 'qwerty' },
+//     { uri: 'c', id: 312, ov: 'qwerty' },
+//     { uri: 'a', id: 1234, ov: 'qwerty' },
+//     { uri: 'b', id: 321, ov: 'qwerty' },
+// ];
+// const data = [];
+// const filterArr = () => {
+//     listArr.forEach((value) => {
+//         if (typeof data[value.uri] === 'undefined') {
+//             data[value.uri] = {
+//                 id: [],
+//             };
+//         }
+//         // process.id.push(value.id);
+//         data[value.uri].id.push(value.id);
+//     });
+// };
+// filterArr();
+
+// var add = function add(x) {
+//     console.log(x);
+//     return function (y) {
+//         console.log(y);
+//       return x + y;
+//     };
+//   };
+
+// const news = a => b => add(a)(b);
+
+// console.log(news(1)(2));
+
+
+// exports.authorize = function () {
+//     var roles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : User.roles;
+//     return function (req, res, next) {
+//       return passport.authenticate('jwt',
+//      { session: false },
+//      handleJWT(req, res, next, roles))(req, res, next);
+//     };
+//   };
+
+
+//   var news = function news(a) {
+//     return function (b) {
+//       return add(1)(2);
+//     };
+//   };

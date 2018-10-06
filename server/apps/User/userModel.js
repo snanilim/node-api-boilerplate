@@ -103,6 +103,8 @@ userSchema.method({
 });
 
 userSchema.statics = {
+    roles,
+
     async findAndGenerateToken(options) {
         try {
             const { email, password, refreshObj } = options;
