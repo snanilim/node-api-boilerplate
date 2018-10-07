@@ -7,10 +7,9 @@ exports.signUp = async (req, res, next) => {
     const { body: data } = req;
     try {
         const resSaveUser = await saveNewUser(data);
-        const message = { message: constMsg.SIGNUP };
+        const message = constMsg.SIGNUP;
         const sendMessage = { user: resSaveUser.user, token: resSaveUser.token, message };
         return resMsg(sendMessage, constMsg.CREATED_CODE, res, next);
-        console.log('after call');
     } catch (error) {
         return next(error);
     }
