@@ -105,6 +105,15 @@ userSchema.method({
 userSchema.statics = {
     roles,
 
+    async findById(userID) {
+        try {
+            const user = await this.findById(userID);
+            return user;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
     async findAndGenerateToken(options) {
         try {
             const { email, password, refreshObj } = options;
