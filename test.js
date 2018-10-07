@@ -140,137 +140,55 @@
 
 // console.log(result);
 
-const oldObj = [
-    {
-        remote_addr: '119.30.32.186',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request:
-     '"GET /avisit_free_site/eyJzaXRlX2lkIjoiMTAiLCJzaXRlX3VybCI6Imh0dHBzJTNBJTJGJTJGaHR0cC1iaWtyb3ktY29tLjAuZnJlZWJhc2ljcy5jb20lMkYiLCJyZWZlcmVyIjoiaHR0cDpcL1wvd3d3LmdwZWFzeW5ldC5jb20ifQ%3D%3D HTTP/1.1"',
-    status: '302',
-    body_bytes_sent: '5',
-    request_time: '0.075',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent:
-     '"Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36"',
-    http_x_forwarded_for: '"-"',
-    upstream_response_time: '"0.075"',
-    x: '"8801789799948"',
-    http_msisdn: '"web-2"',
-    upstream_http_X_Upstream: '"d600a472ff82eccebfe2eec0ece56ca9"',
-    },
-    {
-    remote_addr: '119.30.32.186',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request:
-     '"GET /visit_free_site/eyJzaXRlX2lkIjoiMTAiLCJzaXRlX3VybCI6Imh0dHBzJTNBJTJGJTJGaHR0cC1iaWtyb3ktY29tLjAuZnJlZWJhc2ljcy5jb20lMkYiLCJyZWZlcmVyIjoiaHR0cDpcL1wvd3d3LmdwZWFzeW5ldC5jb20ifQ%3D%3D HTTP/1.1"',
-    status: '302',
-    body_bytes_sent: '5',
-    request_time: '0.075',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent:
-     '"Mozilla/5.0 (Linux; Android 5.1.1; SM-J320FN Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/49.0.2623.105 Mobile Safari/537.36"',
-    http_x_forwarded_for: '"-"',
-    upstream_response_time: '"0.075"',
-    x: '"8801789799948"',
-    http_msisdn: '"web-2"',
-    upstream_http_X_Upstream: '"d600a472ff82eccebfe2eec0ece56ca9"',
-    },
-  {
-    remote_addr: '119.30.47.170',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request: '"GET / HTTP/1.0"',
-    status: '200',
-    body_bytes_sent: '13689',
-    request_time: '0.379',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent:
-     '"Mozilla/5.0 (Linux; Android 7.0; Primo G7 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36[FBAN/InternetOrgApp;',
-    http_x_forwarded_for: 'FBAV/7.0;]"',
-    upstream_response_time: '"-"',
-    x: '"0.226"',
-    http_msisdn: '"8801784304960"',
-    upstream_http_X_Upstream: '"web-2"',
-    upstream_http_Session_Id: '"7b54000425725f298dad2f011a092e12"',
-    },
-  {
-    remote_addr: '119.30.39.88',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request: '"GET / HTTP/1.0"',
-    status: '200',
-    body_bytes_sent: '13691',
-    request_time: '0.517',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent:
-     '"Mozilla/5.0 (Linux; Android 7.1.1; SM-J250F Build/NMF26X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/64.0.3282.137 Mobile Safari/537.36 [FBAN/InternetOrgApp;FBAV/28.0.0.5.165;]"',
-    http_x_forwarded_for: '"-"',
-    upstream_response_time: '"0.232"',
-    x: '"8801721852378"',
-    http_msisdn: '"web-2"',
-    upstream_http_X_Upstream: '"840ff67cd903bae6f6ef68637cc674c7"',
-    },
-  {
-    remote_addr: '123.108.244.88',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request: '"GET /google_search HTTP/1.1"',
-    status: '200',
-    body_bytes_sent: '4573',
-    request_time: '0.106',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent: '"Dorado WAP-Browser/1.0.0"',
-    http_x_forwarded_for: '"-"',
-    upstream_response_time: '"0.106"',
-    x: '"8801779088757"',
-    http_msisdn: '"web-1"',
-    upstream_http_X_Upstream: '"09a2a0528ae16a1b15028d64f6e7e87e"',
-    },
-  {
-    remote_addr: '119.30.32.57',
-    '-': '-',
-    remote_user: '-',
-    time_local: '[21/Sep/2018:23:55:03 +0600]',
-    request: '"GET / HTTP/1.0"',
-    status: '200',
-    body_bytes_sent: '13701',
-    request_time: '2.840',
-    d: '-',
-    http_referer: '"-"',
-    http_user_agent:
-     '"Mozilla/5.0 (Linux; Android 5.1.1; SM-J500F Build/LMY48B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36 [FBAN/InternetOrgApp;FBAV/31.0.0.2.150;]"',
-    http_x_forwarded_for: '"-"',
-    upstream_response_time: '"0.216"',
-    x: '"8801719412965"',
-    http_msisdn: '"web-2"',
-    upstream_http_X_Upstream: '"080f674858119641ba0023758f244df2"',
-    },
-];
+// const listArr = [
+//     { uri: 'a', id: 123, ov: 'qwerty' },
+//     { uri: 'b', id: 321, ov: 'qwerty' },
+//     { uri: 'c', id: 123, ov: 'qwerty' },
+//     { uri: 'a', id: 321, ov: 'qwerty' },
+//     { uri: 'b', id: 123, ov: 'qwerty' },
+//     { uri: 'c', id: 312, ov: 'qwerty' },
+//     { uri: 'a', id: 1234, ov: 'qwerty' },
+//     { uri: 'b', id: 321, ov: 'qwerty' },
+// ];
+// const data = [];
+// const filterArr = () => {
+//     listArr.forEach((value) => {
+//         if (typeof data[value.uri] === 'undefined') {
+//             data[value.uri] = {
+//                 id: [],
+//             };
+//         }
+//         // process.id.push(value.id);
+//         data[value.uri].id.push(value.id);
+//     });
+// };
+// filterArr();
 
-const newObj = oldObj.filter((item, index, self) => {
-    const value = index === self.findIndex((t) => {
-        const result = t.request === item.request && t.upstream_http_X_Upstream === item.upstream_http_X_Upstream;
-        return result;
-    });
-    return value;
-});
+// var add = function add(x) {
+//     console.log(x);
+//     return function (y) {
+//         console.log(y);
+//       return x + y;
+//     };
+//   };
 
-console.log(newObj);
-console.log(newObj.length);
+// const news = a => b => add(a)(b);
+
+// console.log(news(1)(2));
 
 
-const str = "GET /pack/facebook-28-days HTTP/1.1";
-const aaa = str.split(' ');
-console.log(aaa);
+// exports.authorize = function () {
+//     var roles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : User.roles;
+//     return function (req, res, next) {
+//       return passport.authenticate('jwt',
+//      { session: false },
+//      handleJWT(req, res, next, roles))(req, res, next);
+//     };
+//   };
+
+
+//   var news = function news(a) {
+//     return function (b) {
+//       return add(1)(2);
+//     };
+//   };
