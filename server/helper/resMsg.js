@@ -4,5 +4,4 @@ exports.resMsg = (sendMsg, status, res, next) => {
 
     res.status(status);
     res.json(message);
-    res.end();
 };
