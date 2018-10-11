@@ -106,6 +106,7 @@ userSchema.statics = {
     roles,
 
     async findById(userID) {
+        // console.log('userID', userID);
         try {
             const user = await this.findById(userID);
             return user;

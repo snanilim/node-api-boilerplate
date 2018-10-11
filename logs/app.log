@@ -1108,3 +1108,40 @@
 {"status":"start","message":{},"level":"info"}
 {"message":{},"level":"info"}
 {"message":{"end":"::1 - - [08/Oct/2018:11:20:47 +0000] \"GET /v1/user HTTP/1.1\" 500 2 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:44:12 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:45:35 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:46:41 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:47:22 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:48:54 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:10:49:23 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:07:59 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim12@gmail.com","password":"asd123"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:09:04 +0000] \"POST /v1/auth/sign-up HTTP/1.1\" 404 23 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim12@gmail.com","password":"asd123"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"snanilim12@gmail.com\" }\n    at Function.MongoError.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:49:10)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:803:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:531:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:09:13 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 840 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim123@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:09:23 +0000] \"POST /v1/sign-up HTTP/1.1\" 201 567 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:09:57 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:12:41 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:15:31 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:16:25 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:17:46 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [11/Oct/2018:11:21:19 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}

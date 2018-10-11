@@ -187,8 +187,18 @@
 //   };
 
 
-//   var news = function news(a) {
-//     return function (b) {
-//       return add(1)(2);
-//     };
-//   };
+const news = function news(a) {
+    return function (b) {
+        console.log('a', a);
+        console.log('b', b);
+      return a % b;
+    };
+};
+
+
+const newCall = (a) => {
+    console.log(a(6));
+};
+
+// const call = news(3);
+console.log(newCall(news(3)));
