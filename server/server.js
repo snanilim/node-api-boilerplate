@@ -2,9 +2,9 @@ require('dotenv').config();
 const config = require('config');
 const log = require('debug')('log:http');
 const http = require('http');
-const mongo = require('./settings/db');
+// const mongo = require('./settings/db');
 
-mongo.connect();
+// mongo.connect();
 
 const app = require('./settings/app');
 

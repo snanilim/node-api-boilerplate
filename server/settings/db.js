@@ -19,10 +19,16 @@ const onClose = () => {
 const onReconnect = () => {
     logger.info('MongoDB reconnected');
 };
-let db = null;
+var db = null;
+var Wrapper = function(){
+    this.foo = null;
+    this.init();
+  };
+  
 
+  Wrapper.prototype.init = function(){
+    var wrapper = this; 
 
-const connectWithRetry = () => {
     MongoClient.connect(
         mongodbConnectioonURI,
         CONNECT_OPTIONS,
@@ -38,6 +44,7 @@ const connectWithRetry = () => {
                 db.on('close', onClose);
                 db.on('reconnect', onReconnect);
                 console.log('-----------db---------------', db);
+                wrapper.foo = db;
                 logger.info('Mongodb Connected Succesfully');
             }
         },
@@ -45,23 +52,4 @@ const connectWithRetry = () => {
 };
 // connectWithRetry();
 
-exports.connect = connectWithRetry;
-console.log('db---------------', db);
-exports.db = db;
-
-// mongoose.connection.on('error', (err) => {
-//     console.log(`Mongo Error: ${err}`);
-//     process.exit(-1);
-// });
-
-// if (config.util.getEnv('NODE_ENV') === 'development') {
-//     mongoose.set('debug', true);
-// }
-
-// exports.connect = () => {
-//     mongoose.connect(config.get('mongo_uri'), {
-//         keepAlive: 1,
-//         useNewUrlParser: true,
-//     });
-//     return mongoose.connection;
-// };
+module.exports = new Wrapper();

@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const config = require('config');
 const ThrowError = require('../../helper/throwError');
 const constMsg = require('../../helper/constMsg');
-const db = require('../../settings/db');
+const db  = require('../../settings/db');
 
 console.log(db);
 
@@ -44,8 +44,12 @@ const userSchema = {
     },
 };
 
-const Users = db.createCollection('User', userSchema);
-module.exports = Users;
+const User = async () => {
+    // console.log(db);
+    // await db.createCollection('User', userSchema);
+};
+// const User = db.createCollection('User', userSchema);
+module.exports = User;
 
 // const schemaOptions = {
 //     timestamps: true,
