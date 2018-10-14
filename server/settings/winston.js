@@ -9,13 +9,18 @@ const options = {
         json: true,
         maxsize: 5242880, // 5MB
         maxFiles: 5,
-        colorize: false,
+        colorize: true,
+        format: winston.format.json(),
     },
     console: {
         level: 'debug',
         handleExceptions: true,
-        json: false,
+        json: true,
         colorize: true,
+        format: winston.format.combine(
+            winston.format.colorize(),
+            winston.format.simple(),
+        ),
     },
 };
 

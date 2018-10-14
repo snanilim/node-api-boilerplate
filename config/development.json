@@ -1,5 +1,6 @@
 {
     "port": 4000,
     "version": "v1",
-    "jwtTimeExpire": 100
+    "jwtTimeExpire": 100,
+    "dbName": "node-api-boilerplate"
 }

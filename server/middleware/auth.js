@@ -28,6 +28,11 @@ const handleAuth = (req, res, next, roles) => async (err, user, info) => {
     // return next();
 };
 
+const findById = (userID) => {
+    console.log('userID', userID);
+    return userID;
+};
+
 const verifyJWT = function verifyJWT(rcvHandleFunction) {
     console.log('sdf');
     // eslint-disable-next-line func-names
