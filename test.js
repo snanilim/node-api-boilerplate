@@ -187,18 +187,23 @@
 //   };
 
 
-const news = function news(a) {
-    return function (b) {
-        console.log('a', a);
-        console.log('b', b);
-      return a % b;
-    };
-};
+// const news = function news(a) {
+//     return function (b) {
+//         console.log('a', a);
+//         console.log('b', b);
+//       return a % b;
+//     };
+// };
 
 
-const newCall = (a) => {
-    console.log(a(6));
-};
+// const newCall = (a) => {
+//     console.log(a(6));
+// };
 
-// const call = news(3);
-console.log(newCall(news(3)));
+// // const call = news(3);
+// console.log(newCall(news(3)));
+
+const arr = Array.from({ length: 5 }, (x, y) => y + 1);
+const result = arr.reduce((x, y) => (x + y), 0);
+
+console.log(result);

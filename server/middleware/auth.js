@@ -11,13 +11,22 @@ const handleAuth = (req, res, next, roles) => async (err, user, info) => {
     console.log('err', err);
     console.log('user', user);
     console.log('info', info);
-    process.exit(1);
-    // const error = new ThrowError({
-    //     status: '',
-    //     message: '',
-    // });
+    const error = err || info;
+    const throwError = new ThrowError({
+        message: error ? error.message : 'unauthorized',
+        status: 401,
+        stack: error ? error.stack : undefined,
+        isPublic: true,
+    });
 
-    // return next();
+    if (error) return next(throwError);
+    if (user.role !== roles && user.role !== 'admin') {
+        throwError.message = 'forbidden';
+        return next(throwError);
+    }
+    console.log('log');
+    req.user = user;
+    return next();
 };
 
 const verifyJWT = function verifyJWT(rcvHandleFunction) {

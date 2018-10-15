@@ -1729,3 +1729,83 @@
 {"message":"Mongodb Connected Succesfully","level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"sasnaiql3qa1@mail.com","password":"<script>"},"level":"info"}
+{"status":401,"message":{"message":"Authentication Error: Invalid Email or Password"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:15:54:12 +0000] \"POST /v1/login HTTP/1.1\" 401 61 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"abc9@mail.com\" }\n    at Function.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:827:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:15:54:24 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 822 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"abc0@mail.com","password":"script"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:15:54:41 +0000] \"POST /v1/sign-up HTTP/1.1\" 201 559 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"sasnaiql3qa1@mail.com","password":"<script>"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:15:55:31 +0000] \"POST /v1/users HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"sasnaiql3qa1@mail.com","password":"<script>"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:15:55:39 +0000] \"POST /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"Token is required"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:40:40 +0000] \"GET /v1/user HTTP/1.1\" 401 31 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"Cannot read property 'token' of undefined","stack":"TypeError: Cannot read property 'token' of undefined\n    at /home/nilim/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:42:83\n    at /home/nilim/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:54:49\n    at Layer.handle [as handle_request] (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:41:08 +0000] \"GET /v1/user HTTP/1.1\" 401 2072 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:41:27 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:43:04 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:43:57 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:44:41 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:44:54 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:45:39 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:46:28 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:47:20 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:49:03 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:54:18 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:55:01 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:55:22 +0000] \"GET /v1/user HTTP/1.1\" 401 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:16:55:33 +0000] \"GET /v1/user HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
