@@ -20,11 +20,14 @@ exports.saveNewUser = async (data) => {
     // console.log('last', db.foo);
 
     const info = db.foo;
-    info.collection('users').find({});
+    // info.collection('users').find({});
 
     try {
-        const user = await info.collection('users').find().toArray();
-        console.log('-------', user);
+        info.User.insert([
+            { 'email': 'aa@mail.com' }
+         ]);
+        // const user = await info.collection('users').find().toArray();
+        // console.log('-------', user);
         // const user = new User({
         //     email: data.email,
         //     password: data.password,

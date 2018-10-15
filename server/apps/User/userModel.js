@@ -9,44 +9,20 @@ const db  = require('../../settings/db');
 
 console.log(db);
 
-const userSchema = {
-    validator: {
-        $jsonSchema: {
-           bsonType: 'object',
-           required: ['name', 'year', 'major', 'gpa', 'address.city', 'address.street'],
-           properties: {
-              name: {
-                 bsonType: 'string',
-                 description: 'must be a string and is required',
-              },
-              gender: {
-                 bsonType: 'string',
-                 description: 'must be a string and is not required',
-              },
-              year: {
-                 bsonType: 'int',
-                 minimum: 2017,
-                 maximum: 3017,
-                 exclusiveMaximum: false,
-                 description: 'must be an integer in [ 2017, 3017 ] and is required',
-              },
-              major: {
-                 enum: ['Math', 'English', 'Computer Science', 'History', null],
-                 description: 'can only be one of the enum values and is required',
-              },
-              gpa: {
-                 bsonType: ['double'],
-                 minimum: 0,
-                 description: 'must be a double and is required',
-              },
-           },
-        },
-    },
-};
+
 
 const User = async () => {
     // console.log(db);
-    // await db.createCollection('User', userSchema);
+    const info = db.foo;
+    info.createCollection( "users",
+   { validator: { $or:
+      [
+         { phone: { $type: "string" } },
+         { email: { $regex: /@mongodb\.com$/ } },
+         { status: { $in: [ "Unknown", "Incomplete" ] } }
+      ]
+   }
+} )
 };
 // const User = db.createCollection('User', userSchema);
 module.exports = User;

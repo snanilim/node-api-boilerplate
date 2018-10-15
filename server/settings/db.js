@@ -20,7 +20,7 @@ const onReconnect = () => {
     logger.info('MongoDB reconnected');
 };
 var db = null;
-var Wrapper = function(){
+const Wrapper = function(){
     this.foo = null;
     this.init();
   };
