@@ -1580,56 +1580,152 @@
 {"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
 {"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
 {"message":{"end":"::1 - - [14/Oct/2018:19:25:47 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]","level":"error"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:29:09 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"error":{},"level":"error","message":"uncaughtException: Cannot set property 'init' of undefined\nTypeError: Cannot set property 'init' of undefined\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/db.js:29:26)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/app.js:1:77)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)","stack":"TypeError: Cannot set property 'init' of undefined\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/db.js:29:26)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/app.js:1:77)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)","exception":true,"date":"Mon Oct 15 2018 01:31:42 GMT+0600 (Bangladesh Standard Time)","process":{"pid":31333,"uid":0,"gid":0,"cwd":"/home/nilim/Documents/programmer/node-api-boilerplate","execPath":"/usr/bin/node","version":"v10.8.0","argv":["/usr/bin/node","/home/nilim/Documents/programmer/node-api-boilerplate/server/server.js"],"memoryUsage":{"rss":46592000,"heapTotal":21794816,"heapUsed":12079624,"external":18327752}},"os":{"loadavg":[0.69775390625,1.11376953125,1.103515625],"uptime":20616},"trace":[{"column":26,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/db.js","function":null,"line":29,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":77,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/settings/app.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false}]}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:47:11 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:49:57 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:50:26 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
-{"error":{},"level":"error","message":"uncaughtException: Identifier 'User' has already been declared\n/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userModel.js:51\nconst User = db.createCollection('User', userSchema);\n      ^\n\nSyntaxError: Identifier 'User' has already been declared\n    at new Script (vm.js:74:7)\n    at createScript (vm.js:246:10)\n    at Object.runInThisContext (vm.js:298:10)\n    at Module._compile (internal/modules/cjs/loader.js:657:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)","stack":"/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userModel.js:51\nconst User = db.createCollection('User', userSchema);\n      ^\n\nSyntaxError: Identifier 'User' has already been declared\n    at new Script (vm.js:74:7)\n    at createScript (vm.js:246:10)\n    at Object.runInThisContext (vm.js:298:10)\n    at Module._compile (internal/modules/cjs/loader.js:657:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)","exception":true,"date":"Mon Oct 15 2018 01:51:57 GMT+0600 (Bangladesh Standard Time)","process":{"pid":32507,"uid":0,"gid":0,"cwd":"/home/nilim/Documents/programmer/node-api-boilerplate","execPath":"/usr/bin/node","version":"v10.8.0","argv":["/usr/bin/node","/home/nilim/Documents/programmer/node-api-boilerplate/server/server.js"],"memoryUsage":{"rss":52031488,"heapTotal":32804864,"heapUsed":15337552,"external":18873351}},"os":{"loadavg":[0.36572265625,0.4912109375,0.681640625],"uptime":21830},"trace":[{"column":7,"file":"vm.js","function":"new Script","line":74,"method":null,"native":false},{"column":10,"file":"vm.js","function":"createScript","line":246,"method":null,"native":false},{"column":10,"file":"vm.js","function":"Object.runInThisContext","line":298,"method":"runInThisContext","native":false},{"column":28,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":657,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false}]}
-{"message":"Mongodb Connected Succesfully","level":"info"}
-{"error":{},"level":"error","message":"uncaughtException: db.createCollection is not a function\nTypeError: db.createCollection is not a function\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userModel.js:51:17)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:4:14)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)","stack":"TypeError: db.createCollection is not a function\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userModel.js:51:17)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:4:14)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)","exception":true,"date":"Mon Oct 15 2018 01:52:13 GMT+0600 (Bangladesh Standard Time)","process":{"pid":32549,"uid":0,"gid":0,"cwd":"/home/nilim/Documents/programmer/node-api-boilerplate","execPath":"/usr/bin/node","version":"v10.8.0","argv":["/usr/bin/node","/home/nilim/Documents/programmer/node-api-boilerplate/server/server.js"],"memoryUsage":{"rss":51363840,"heapTotal":32804864,"heapUsed":16273408,"external":19016664}},"os":{"loadavg":[0.3525390625,0.4833984375,0.67578125],"uptime":21847},"trace":[{"column":17,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userModel.js","function":null,"line":51,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":14,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js","function":null,"line":4,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false}]}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]","level":"error"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:55:02 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:55:29 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim121@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"message":"RefreshToken.generate is not a function","stack":"TypeError: RefreshToken.generate is not a function\n    at generateToken (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:9:39)\n    at exports.saveNewUser (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:25:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:46:01 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 416 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:19:59:05 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim121@gmail.com","password":"asd123"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"snanilim121@gmail.com\" }\n    at Function.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:827:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:47:06 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 830 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim120@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:47:14 +0000] \"POST /v1/sign-up HTTP/1.1\" 201 567 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:20:01:16 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:48:19 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:20:03:31 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:20:04:12 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
-{"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
-{"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
-{"message":{"end":"::1 - - [14/Oct/2018:20:04:32 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:50:49 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:52:08 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:52:48 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:06:23 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:19:07 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:19:42 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:20:06 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:20:46 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:19 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:40 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:52 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:23:02 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:23:14 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:24:16 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:25:05 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:56:27 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:58:06 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:58:50 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:59:05 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:10:00:03 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:10:00:29 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}

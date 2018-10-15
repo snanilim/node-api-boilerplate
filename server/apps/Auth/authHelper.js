@@ -4,8 +4,6 @@ const config = require('config');
 const User = require('../User/userModel');
 const RefreshToken = require('./refreshTokenModel');
 
-const db  = require('../../settings/db');
-
 const generateToken = (user, accessToken) => {
     const tokenType = 'Bearer';
     const refreshToken = RefreshToken.generate(user).token; // its only reply token from full obj
@@ -17,28 +15,17 @@ const generateToken = (user, accessToken) => {
 };
 
 exports.saveNewUser = async (data) => {
-    // console.log('last', db.foo);
-
-    const info = db.foo;
-    // info.collection('users').find({});
-
     try {
-        info.User.insert([
-            { 'email': 'aa@mail.com' }
-         ]);
-        // const user = await info.collection('users').find().toArray();
-        // console.log('-------', user);
-        // const user = new User({
-        //     email: data.email,
-        //     password: data.password,
-        // });
-        // const resSaveUser = await user.save();
-        // const userInfo = resSaveUser.userInfo();
-        // const token = generateToken(resSaveUser, resSaveUser.token());
-        // return { token, user: userInfo };
+        const user = new User({
+            email: data.email,
+            password: data.password,
+        });
+        const resSaveUser = await user.save();
+        const userInfo = resSaveUser.userInfo();
+        const token = generateToken(resSaveUser, resSaveUser.token());
+        return { token, user: userInfo };
     } catch (error) {
-        console.log('%%%%%%', error);
-        // throw User.checkDuplicateEmail(error);
+        throw User.checkDuplicateEmail(error);
     }
 };
 
