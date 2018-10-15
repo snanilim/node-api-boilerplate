@@ -1580,3 +1580,151 @@
 {"status":"start","message":{"email":"abc9@mail.com","password":"script"},"level":"info"}
 {"message":{"message":"Cannot read property 'user' of undefined","stack":"TypeError: Cannot read property 'user' of undefined\n    at exports.signUp (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authController.js:11:49)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
 {"message":{"end":"::1 - - [14/Oct/2018:19:25:47 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 303 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:2701] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:2701]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"snanilim121@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"message":"RefreshToken.generate is not a function","stack":"TypeError: RefreshToken.generate is not a function\n    at generateToken (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:9:39)\n    at exports.saveNewUser (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Auth/authHelper.js:25:23)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:46:01 +0000] \"POST /v1/sign-up HTTP/1.1\" 500 416 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"snanilim121@gmail.com","password":"asd123"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"snanilim121@gmail.com\" }\n    at Function.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:827:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:47:06 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 830 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim120@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:47:14 +0000] \"POST /v1/sign-up HTTP/1.1\" 201 567 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:48:19 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:50:49 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:52:08 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:08:52:48 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:06:23 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:19:07 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:19:42 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:20:06 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:20:46 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:19 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:40 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:22:52 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:23:02 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:23:14 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:24:16 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:25:05 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:56:27 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:58:06 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:58:50 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:09:59:05 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:10:00:03 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [15/Oct/2018:10:00:29 +0000] \"GET /v1/user HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}

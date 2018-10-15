@@ -6,14 +6,6 @@ const ThrowError = require('../helper/throwError');
 const ADMIN = 'admin';
 const USER = 'user';
 
-const checkRoles = (roles, userID) => {
-    const user = User.findById(userID);
-    if (User.roles.includes(roles)) {
-        if (roles === user.role) return true;
-        return false;
-    }
-    return false;
-};
 
 const handleAuth = (req, res, next, roles) => async (err, user, info) => {
     console.log('err', err);
@@ -28,15 +20,9 @@ const handleAuth = (req, res, next, roles) => async (err, user, info) => {
     // return next();
 };
 
-const findById = (userID) => {
-    console.log('userID', userID);
-    return userID;
-};
-
 const verifyJWT = function verifyJWT(rcvHandleFunction) {
-    console.log('sdf');
     // eslint-disable-next-line func-names
-    return function (req, res, next) {
+    return async function (req, res, next) {
         const info = {};
         const tokenValue = req.headers.authorization;
         if (tokenValue === undefined) {
@@ -44,15 +30,12 @@ const verifyJWT = function verifyJWT(rcvHandleFunction) {
             return rcvHandleFunction(null, false, info);
         }
         try {
-            console.log('tokenValue', tokenValue);
             const token = (tokenValue && tokenValue.split(' ')[1]) || req.cookies.token;
             const payload = jwt.verify(token, config.get('token_secret'));
-            console.log(payload.sub);
             const userID = payload.sub;
-            const user = User.findById(userID);
+            const user = await User.getSingleValue(userID);
             return rcvHandleFunction(null, user, null);
         } catch (err) {
-            console.log(err);
             return rcvHandleFunction(err, false, null);
         }
     };
