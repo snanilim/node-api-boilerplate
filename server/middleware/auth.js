@@ -8,22 +8,20 @@ const USER = 'user';
 
 
 const handleAuth = (req, res, next, roles) => async (err, user, info) => {
-    console.log('err', err);
-    console.log('user', user);
-    console.log('info', info);
+    console.log('--err--', err);
+    console.log('--user--', user);
+    console.log('--info--', info);
     const error = err || info;
     const throwError = new ThrowError({
-        message: error ? error.message : 'unauthorized',
-        status: 401,
+        message: error ? error.message : 'forbidden',
+        status: error ? 401 : 403,
         stack: error ? error.stack : undefined,
         isPublic: true,
     });
 
     if (error) return next(throwError);
-    if (user.role !== roles && user.role !== 'admin') {
-        throwError.message = 'forbidden';
-        return next(throwError);
-    }
+    if (user.role !== roles && user.role !== 'admin') return next(throwError);
+
     console.log('log');
     req.user = user;
     return next();
@@ -51,7 +49,7 @@ const verifyJWT = function verifyJWT(rcvHandleFunction) {
 };
 
 const isAuthorized = (roles = User.roles) => (req, res, next) => {
-    verifyJWT(handleAuth(req, res, next, roles))(req, res, next);
+    return verifyJWT(handleAuth(req, res, next, roles))(req, res, next);
     console.log(123333);
 };
 
