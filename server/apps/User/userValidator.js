@@ -12,16 +12,9 @@ const commonDataValidator = (schemaName, data, next) => {
     throw new ThrowError({ message: error[0].message, status: constants.BAD_REQUEST_CODE });
 };
 
-exports.sign_up = (req, res, next) => {
-    const { query: data } = req;
-    const schemaName = 'signUpSchema';
-
-    commonDataValidator(schemaName, data, next);
-};
-
-exports.login = (req, res, next) => {
+exports.listUsers = (req, res, next) => {
     const { body: data } = req;
-    const schemaName = 'loginSchema';
+    const schemaName = 'listUsers';
 
     commonDataValidator(schemaName, data, next);
 };

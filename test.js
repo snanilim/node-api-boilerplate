@@ -203,7 +203,7 @@
 // // const call = news(3);
 // console.log(newCall(news(3)));
 
-const arr = Array.from({ length: 5 }, (x, y) => y + 1);
-const result = arr.reduce((x, y) => (x + y), 0);
+// const arr = Array.from({ length: 5 }, (x, y) => y + 1);
+// const result = arr.reduce((x, y) => (x + y), 0);
 
-console.log(result);
+// console.log(result);
