@@ -8,9 +8,6 @@ const USER = 'user';
 
 
 const handleAuth = (req, res, next, roles) => async (err, user, info) => {
-    console.log('--err--', err);
-    console.log('--user--', user);
-    console.log('--info--', info);
     const error = err || info;
     const throwError = new ThrowError({
         message: error ? error.message : 'forbidden',
@@ -40,7 +37,7 @@ const verifyJWT = function verifyJWT(rcvHandleFunction) {
             const token = (tokenValue && tokenValue.split(' ')[1]) || req.cookies.token;
             const payload = jwt.verify(token, config.get('token_secret'));
             const userID = payload.sub;
-            const user = await User.getSingleValue(userID);
+            const user = await User.getOneUser(userID);
             return rcvHandleFunction(null, user, null);
         } catch (err) {
             return rcvHandleFunction(err, false, null);
@@ -50,7 +47,6 @@ const verifyJWT = function verifyJWT(rcvHandleFunction) {
 
 const isAuthorized = (roles = User.roles) => (req, res, next) => {
     return verifyJWT(handleAuth(req, res, next, roles))(req, res, next);
-    console.log(123333);
 };
 
 exports.isAuthorized = isAuthorized;

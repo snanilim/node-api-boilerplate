@@ -9,11 +9,15 @@ const commonDataValidator = (schemaName, data, next) => {
     if (valid) return next();
 
     const error = ajv.errors;
-    throw new ThrowError({ message: error[0].message, status: constants.BAD_REQUEST_CODE });
+    const throwError = new ThrowError({
+        message: error[0].message,
+        status: constants.BAD_REQUEST_CODE,
+    });
+    return next(throwError);
 };
 
 exports.sign_up = (req, res, next) => {
-    const { query: data } = req;
+    const { body: data } = req;
     const schemaName = 'signUpSchema';
 
     commonDataValidator(schemaName, data, next);

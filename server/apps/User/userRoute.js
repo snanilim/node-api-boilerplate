@@ -6,7 +6,7 @@ const validator = require('./userValidator');
 const router = express.Router();
 
 router.route('/')
-.get(isAuthorized(USER), validator.listUsers);
+.get(isAuthorized(USER), validator.listUsers, userController.allUsers);
 
 
 module.exports = router;

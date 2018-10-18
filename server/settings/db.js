@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const config = require('config');
 const logger = require('../settings/winston');
 
+mongoose.connection.on('open', (ref) => {
+    logger.info('Mongodb Connected Succesfully');
+});
+
 mongoose.connection.on('error', (err) => {
     logger.error(`MongoDB Connection was faield: ${err.message}`);
     process.exit(-1);
@@ -16,6 +20,5 @@ exports.connect = () => {
         keepAlive: 1,
         useNewUrlParser: true,
     });
-    logger.info('Mongodb Connected Succesfully');
     return mongoose.connection;
 };

@@ -105,13 +105,28 @@ userSchema.method({
 userSchema.statics = {
     roles,
 
-    async getSingleValue(userID) {
+    async getOneUser(userID) {
         try {
             const user = await this.findOne({ _id: userID });
             return user;
         } catch (err) {
             throw new ThrowError(err);
         }
+    },
+
+    async getAllUser({
+        page = 1, perPage = 20, name, email, role,
+    }) {
+        console.log(email);
+        const search = { name, email, role };
+        console.log(search.name);
+        const filtered = Object.keys(search)
+            .filter(key => search[key] !== undefined)
+            .reduce((obj, key) => {
+                obj[key] = search[key];
+                return obj;
+            }, {});
+        console.log(filtered);
     },
 
     async findAndGenerateToken(options) {

@@ -9,11 +9,15 @@ const commonDataValidator = (schemaName, data, next) => {
     if (valid) return next();
 
     const error = ajv.errors;
-    throw new ThrowError({ message: error[0].message, status: constants.BAD_REQUEST_CODE });
+    const throwError = new ThrowError({
+        message: error[0].message,
+        status: constants.BAD_REQUEST_CODE,
+    });
+    return next(throwError);
 };
 
 exports.listUsers = (req, res, next) => {
-    const { body: data } = req;
+    const { query: data } = req;
     const schemaName = 'listUsers';
 
     commonDataValidator(schemaName, data, next);
