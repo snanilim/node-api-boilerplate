@@ -117,16 +117,23 @@ userSchema.statics = {
     async getAllUser({
         page = 1, perPage = 20, name, email, role,
     }) {
-        console.log(email);
-        const search = { name, email, role };
-        console.log(search.name);
-        const filtered = Object.keys(search)
-            .filter(key => search[key] !== undefined)
+        const queryObj = { name, email, role };
+        const findQuery = Object.keys(queryObj)
+            .filter(key => queryObj[key] !== undefined)
             .reduce((obj, key) => {
-                obj[key] = search[key];
+                // eslint-disable-next-line no-param-reassign
+                obj[key] = queryObj[key];
                 return obj;
             }, {});
-        console.log(filtered);
+        try {
+            return this.find(findQuery)
+                .sort({ createdAt: -1 })
+                .skip(perPage * (page - 1))
+                .limit(perPage)
+                .exec();
+        } catch (error) {
+            return error;
+        }
     },
 
     async findAndGenerateToken(options) {

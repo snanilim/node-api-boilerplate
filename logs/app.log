@@ -2081,3 +2081,36 @@
 {"message":{"end":"::1 - - [18/Oct/2018:21:14:28 +0000] \"GET /v1/user?name=123?role=user HTTP/1.1\" 201 20 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::1 - - [18/Oct/2018:21:14:58 +0000] \"GET /v1/user?name=123&role=user HTTP/1.1\" 201 20 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"abcd2@mail.com","password":"script"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"abcd2@mail.com\" }\n    at Function.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:827:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:11:31 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 823 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"abcd3@mail.com","password":"script"},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:11:41 +0000] \"POST /v1/sign-up HTTP/1.1\" 201 560 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:12:07 +0000] \"GET /v1/user?name=123&role=user HTTP/1.1\" 201 20 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:12:17 +0000] \"GET /v1/user HTTP/1.1\" 201 20 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:20:13 +0000] \"GET /v1/user HTTP/1.1\" 201 3562 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:21:08 +0000] \"GET /v1/user HTTP/1.1\" 200 3527 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"message":"resAllUser.userInfo is not a function","stack":"TypeError: resAllUser.userInfo is not a function\n    at exports.allUsers (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/User/userController.js:10:37)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:24:00 +0000] \"GET /v1/user HTTP/1.1\" 500 299 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"abcd3@mail.com","password":"script"},"level":"info"}
+{"status":409,"message":{"message":"Email already exist","errors":[{"field":"email","location":"body","message":["Email already exist"]}],"stack":"MongoError: E11000 duplicate key error collection: node-api-boilerplate.users index: email_1 dup key: { : \"abcd3@mail.com\" }\n    at Function.create (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb/lib/operations/collection_ops.js:827:39)\n    at /home/nilim/Documents/programmer/node-api-boilerplate/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at process._tickCallback (internal/process/next_tick.js:61:11)"},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:28:50 +0000] \"POST /v1/sign-up HTTP/1.1\" 409 823 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::1 - - [19/Oct/2018:15:28:54 +0000] \"GET /v1/user HTTP/1.1\" 200 1492 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
