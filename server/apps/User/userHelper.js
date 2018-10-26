@@ -9,3 +9,17 @@ exports.listAllUsers = async (query) => {
         throw error;
     }
 };
+
+exports.addNewUser = async (data) => {
+    try {
+        const user = new User({
+            email: data.email,
+            password: data.password,
+        });
+        const resSaveUser = await user.save();
+        const userInfo = resSaveUser.userInfo();
+        return userInfo;
+    } catch (error) {
+        throw User.checkDuplicateEmail(error);
+    }
+};

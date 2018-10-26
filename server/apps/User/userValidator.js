@@ -22,3 +22,10 @@ exports.listUsers = (req, res, next) => {
 
     commonDataValidator(schemaName, data, next);
 };
+
+exports.createUser = (req, res, next) => {
+    const { body: data } = req;
+    const schemaName = 'createUser';
+
+    commonDataValidator(schemaName, data, next);
+};

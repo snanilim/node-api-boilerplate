@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     res.status(200).send({ message: 'Welcome To Node Api Boilerplate' });
 });
 
-router.use('/', authRoute);
+router.use('/auth', authRoute);
 router.use('/user', userRoute);
 
 

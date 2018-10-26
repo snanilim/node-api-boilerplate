@@ -1,5 +1,6 @@
 module.exports = Object.freeze({
     SIGNUP: 'Well Done! User created successfully 🤗',
+    CREATED: 'Well Done! You created successfully 🤗',
     CREATED_CODE: 201,
     LOGIN: 'Well Done! You successfully logged in to this service 🤗',
     SUCCESS_CODE: 200,
