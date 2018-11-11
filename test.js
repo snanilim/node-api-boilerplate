@@ -207,3 +207,29 @@
 // const result = arr.reduce((x, y) => (x + y), 0);
 
 // console.log(result);
+
+var bunny = {
+    name: 'Usagi',
+    tasks: ['transform', 'eat cake', 'blow kisses'],
+    showTasks: function() {
+      var _this = this;
+      _this.tasks.forEach(function(task) {
+        console.log(_this.name + " wants to " + task); 
+      });
+    }
+  };
+  
+  bunny.showTasks();
+
+
+// var bunny = {
+//     name: 'Usagi',
+//     tasks: ['transform', 'eat cake', 'blow kisses'],
+//     showTasks() {
+//       this.tasks.forEach((task) => {
+//         console.log(this.name + " wants to " + task);
+//       });  
+//     }
+//   };
+  
+//   bunny.showTasks();
