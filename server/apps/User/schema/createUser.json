@@ -3,8 +3,6 @@
   "type": "object",
   "title": "The Post user Schema",
   "required": [
-    "email",
-    "password"
   ],
   "properties": {
     "email": {

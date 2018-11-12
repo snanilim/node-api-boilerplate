@@ -1,0 +1,50 @@
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [12/Nov/2018:14:42:39 +0000] \"GET / HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:14:42:56 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:14:44:05 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:14:48:23 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [12/Nov/2018:15:29:22 +0000] \"GET / HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:18:39:48 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":401,"message":{"message":"Token is required"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:31:46 +0000] \"POST /v1/user HTTP/1.1\" 401 31 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin"},"level":"info"}
+{"status":400,"message":{"message":"should NOT be shorter than 6 characters"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:41:10 +0000] \"POST /v1/auth/login HTTP/1.1\" 400 53 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:41:14 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"admin@mail.com"},"level":"info"}
+{"status":401,"message":{"message":"Token is required"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:41:33 +0000] \"POST /v1/user HTTP/1.1\" 401 31 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"admin@mail.com"},"level":"info"}
+{"status":401,"message":{"message":"Token is required"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:47:43 +0000] \"POST /v1/user HTTP/1.1\" 401 31 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":401,"message":{"message":"Token is required"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:48:25 +0000] \"POST /v1/user HTTP/1.1\" 401 31 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":403,"message":{"message":"forbidden"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:52:01 +0000] \"POST /v1/user HTTP/1.1\" 403 23 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":400,"message":{"message":"should match format \"email\""},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:53:27 +0000] \"POST /v1/user HTTP/1.1\" 400 43 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":400,"message":{"message":"should match format \"email\""},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:19:55:50 +0000] \"POST /v1/user HTTP/1.1\" 400 43 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":400,"message":{"message":"should match format \"email\""},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:20:00:34 +0000] \"POST /v1/user HTTP/1.1\" 400 43 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"asd","password":"snanilim@gmail.com"},"level":"info"}
+{"status":400,"message":{"message":"should match format \"email\""},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:20:01:51 +0000] \"POST /v1/user HTTP/1.1\" 400 43 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"asd","email":"snanilim@gmail.com","password":"asd123","role":"user","status":"active"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:20:06:04 +0000] \"POST /v1/user HTTP/1.1\" 201 196 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
