@@ -2401,3 +2401,13 @@
 {"message":"Mongodb Connected Succesfully","level":"info"}
 {"status":"start","message":{"email":"abc@mail.com","password":"testuser"},"level":"info"}
 {"message":{"end":"::1 - - [26/Oct/2018:10:49:24 +0000] \"POST /v1/user HTTP/1.1\" 201 190 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/537.36\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"snanilim123@gmail.com","password":"asd123"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [12/Nov/2018:14:33:00 +0000] \"POST /v1/sign-up HTTP/1.1\" 404 23 \"-\" \"PostmanRuntime/7.4.0\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin"},"level":"info"}
+{"status":400,"message":{"message":"should NOT be shorter than 6 characters"},"level":"info"}
+{"message":{"end":"::1 - - [12/Nov/2018:14:34:13 +0000] \"POST /v1/auth/sign-up HTTP/1.1\" 400 53 \"-\" \"PostmanRuntime/7.4.0\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::1 - - [12/Nov/2018:14:34:23 +0000] \"POST /v1/auth/sign-up HTTP/1.1\" 201 560 \"-\" \"PostmanRuntime/7.4.0\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
