@@ -27,7 +27,7 @@ exports.userList = async (req, res, next) => {
 exports.getOneUser = async (req, res, next) => {
     const { params } = req;
     try {
-        const resOneUser = await oneUser(params.id);
+        const resOneUser = await oneUser(params.userID);
         return resMsg(resOneUser, constMsg.SUCCESS_CODE, res, next);
     } catch (error) {
         return next(error);

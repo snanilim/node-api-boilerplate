@@ -27,7 +27,7 @@ exports.listAllUsers = async (query) => {
 exports.oneUser = async (id) => {
     try {
         const resUserList = await User.getOneUser(id);
-        const userInfo = resUserList.map(user => user.userInfo());
+        const userInfo = resUserList.userInfo();
         return userInfo;
     } catch (error) {
         throw error;
