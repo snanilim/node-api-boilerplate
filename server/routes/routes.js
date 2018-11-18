@@ -1,6 +1,7 @@
 const express = require('express');
 const authRoute = require('../apps/Auth/authRoute');
 const userRoute = require('../apps/User/userRoute');
+const materialRoute = require('../apps/Material/materialRoute');
 
 
 const router = express.Router();
@@ -11,6 +12,7 @@ router.get('/', (req, res) => {
 
 router.use('/auth', authRoute);
 router.use('/user', userRoute);
+router.use('/material', materialRoute);
 
 
 module.exports = router;
