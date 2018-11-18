@@ -217,3 +217,37 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [16/Nov/2018:18:26:22 +0000] \"GET /v1/user HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [16/Nov/2018:18:26:27 +0000] \"GET /v1/user HTTP/1.1\" 200 230 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:24:48 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:24:54 +0000] \"GET /v1/user HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:25:40 +0000] \"GET /v1/user HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:25:54 +0000] \"GET /v1/user HTTP/1.1\" 200 230 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:26:17 +0000] \"GET /v1/user/5be98f6fff7437096a0a6a73 HTTP/1.1\" 200 131 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [18/Nov/2018:16:41:52 +0000] \"GET /v1/user HTTP/1.1\" 200 230 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}

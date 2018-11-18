@@ -1,0 +1,30 @@
+{
+  "definitions": {},
+  "type": "object",
+  "title": "The Post material Schema",
+  "required": [
+  ],
+  "properties": {
+    "name": {
+      "$id": "name",
+      "type": "string",
+      "title": "The Name Schema",
+      "minLength": 3,
+      "maxLength": 250
+    },
+    "weight": {
+      "$id": "weight",
+      "type": "number",
+      "title": "The Weight Schema",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "value": {
+      "$id": "value",
+      "type": "number",
+      "title": "The Value Schema",
+      "minLength": 1,
+      "maxLength": 20
+    }
+  }
+}
