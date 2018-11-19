@@ -16,17 +16,16 @@ const commonDataValidator = (schemaName, data, next) => {
     return next(throwError);
 };
 
-exports.listUsers = (req, res, next) => {
+exports.listMaterials = (req, res, next) => {
     const { query: data } = req;
-    const schemaName = 'listUsers';
+    const schemaName = 'listMaterials';
 
     commonDataValidator(schemaName, data, next);
 };
 
-exports.createUser = (req, res, next) => {
+exports.createMaterial = (req, res, next) => {
     const { body: data } = req;
-    console.log('data', data);
-    const schemaName = 'createUser';
+    const schemaName = 'createMaterial';
 
     commonDataValidator(schemaName, data, next);
 };

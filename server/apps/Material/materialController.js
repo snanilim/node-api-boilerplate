@@ -14,7 +14,7 @@ exports.createMaterial = async (req, res, next) => {
     }
 };
 
-exports.MaterialList = async (req, res, next) => {
+exports.materialList = async (req, res, next) => {
     const { query } = req;
     try {
         const resAllMaterial = await listAllMaterials(query);
