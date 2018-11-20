@@ -5,9 +5,14 @@ const validator = require('./userValidator');
 
 const router = express.Router();
 
-router.route('/')
+router
+    .route('/')
     .get(isAuthorized(USER), validator.listUsers, userController.userList)
-    .post(isAuthorized(ADMIN), validator.createUser, userController.addUser);
+    .post(isAuthorized(ADMIN), validator.createUser, userController.createUser);
+
+router
+    .route('/:userID')
+    .get(isAuthorized(USER), userController.getOneUser);
 
 
 module.exports = router;
