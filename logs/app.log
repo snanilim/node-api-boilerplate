@@ -48,3 +48,122 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:20:01:51 +0000] \"POST /v1/user HTTP/1.1\" 400 43 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{"name":"asd","email":"snanilim@gmail.com","password":"asd123","role":"user","status":"active"},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [12/Nov/2018:20:06:04 +0000] \"POST /v1/user HTTP/1.1\" 201 196 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"snanilim001@gmail.com","password":"asd123"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"snanilim001@gmail.com","password":"asd123"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::1 - - [13/Nov/2018:06:22:10 +0000] \"POST /v1/sign-up HTTP/1.1\" 404 23 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"shah.alam@portonics.com","password":"asd123"},"level":"info"}
+{"status":401,"message":{"message":"Authentication Error: Invalid Email or Password"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:06:22:20 +0000] \"POST /v1/auth/login HTTP/1.1\" 401 61 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim001@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:06:22:39 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 596 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"snanilim001@gmail.com","password":"asd123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:08:21:47 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 596 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::1 - - [13/Nov/2018:09:23:16 +0000] \"POST /v1/auth/sign-up HTTP/1.1\" 201 560 \"-\" \"PostmanRuntime/7.1.5\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:23:43 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:25:15 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:26:57 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:36:00 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:38:02 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:38:55 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:39:36 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:41:38 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:42:49 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:09:42:58 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:41:04 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:41:19 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:41:30 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:42:28 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":404,"message":{"message":"Not found"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:45:27 +0000] \"GET /login HTTP/1.1\" 404 23 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:47:34 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:52:17 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:52:22 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:10:52:46 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:16:22 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:19:00 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:23:44 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:25:25 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:28:36 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:30:10 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:32:30 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:34:20 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:34:28 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:36:21 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:36:33 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:38:20 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:39:45 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:39:51 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:40:04 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:41:03 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:43:47 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 589 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:43:52 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:44:00 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:44:44 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:45:00 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:45:13 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:46:35 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:51:12 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:52:07 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:52:20 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:53:07 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:53:59 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:56:00 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:11:57:49 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:12:09:51 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:12:11:27 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [13/Nov/2018:12:12:16 +0000] \"GET /v1/user HTTP/1.1\" 200 2231 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
