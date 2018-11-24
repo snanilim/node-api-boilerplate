@@ -307,3 +307,264 @@
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [19/Nov/2018:17:11:43 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"message":"Mongodb Connected Succesfully","level":"info"}
+{"error":{"message":"Cannot overwrite `Material` model once compiled.","name":"OverwriteModelError"},"level":"error","message":"uncaughtException: Cannot overwrite `Material` model once compiled.\nOverwriteModelError: Cannot overwrite `Material` model once compiled.\n    at new OverwriteModelError (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/error/overwriteModel.js:20:11)\n    at Mongoose.model (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/index.js:427:13)\n    at Object.<anonymous> (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costModel.js:73:27)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costHelper.js:1:80)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)","stack":"OverwriteModelError: Cannot overwrite `Material` model once compiled.\n    at new OverwriteModelError (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/error/overwriteModel.js:20:11)\n    at Mongoose.model (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/index.js:427:13)\n    at Object.<anonymous> (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costModel.js:73:27)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costHelper.js:1:80)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)","exception":true,"date":"Fri Nov 23 2018 00:08:15 GMT+0600 (Bangladesh Standard Time)","process":{"pid":1692,"uid":0,"gid":0,"cwd":"/Users/hello/Documents/programmer/node-api-boilerplate","execPath":"/usr/local/bin/node","version":"v10.13.0","argv":["/usr/local/bin/node","/Users/hello/Documents/programmer/node-api-boilerplate/server/server.js"],"memoryUsage":{"rss":55595008,"heapTotal":39579648,"heapUsed":24278632,"external":18864109}},"os":{"loadavg":[1.9599609375,2.07568359375,1.90966796875],"uptime":186197},"trace":[{"column":11,"file":"/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/error/overwriteModel.js","function":"new OverwriteModelError","line":20,"method":null,"native":false},{"column":13,"file":"/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/mongoose/lib/index.js","function":"Mongoose.model","line":427,"method":"model","native":false},{"column":27,"file":"/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costModel.js","function":null,"line":73,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":688,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":699,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":598,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":537,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":529,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":636,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":80,"file":"/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costHelper.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":688,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":699,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":598,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":537,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":529,"method":"_load","native":false}]}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [22/Nov/2018:18:17:11 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:09:48:18 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:10:41:55 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:10:43:18 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin"},"level":"info"}
+{"status":400,"message":{"message":"should NOT be shorter than 6 characters"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:35:09 +0000] \"POST /v1/auth/login HTTP/1.1\" 400 53 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:35:14 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:35:28 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:48:34 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:48:48 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:49:16 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:51:24 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:14:54:59 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:09:25 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:11:29 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:55:25 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:57:21 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:58:05 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:15:59:04 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:16:03:08 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:16:07 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:16:12 +0000] \"GET /v1/material HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:16:21 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:17:18 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:21:38 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:27:23 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:30:01 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:33:10 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:43:57 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:45:05 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:45:28 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:46:56 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:47:43 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:48:54 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:50:06 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:51:06 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:52:48 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:18:54:58 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:06:55 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:08:42 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:09:42 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:13:41 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:15:31 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:26:45 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:26:53 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:31:41 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:34:04 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [23/Nov/2018:19:35:28 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:14:00 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:14:07 +0000] \"GET /v1/material HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:14:14 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:18:25 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:19:04 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:26:10 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:28:14 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:28:44 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:33:11 +0000] \"GET /v1/material HTTP/1.1\" 200 48 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"material-2","weight":5,"value":2000},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:34:03 +0000] \"POST /v1/material HTTP/1.1\" 201 130 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:34:10 +0000] \"GET /v1/material HTTP/1.1\" 200 94 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"material-3","weight":10,"value":5000},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:34:29 +0000] \"POST /v1/material HTTP/1.1\" 201 131 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:34:31 +0000] \"GET /v1/material HTTP/1.1\" 200 141 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:09:34:44 +0000] \"GET /v1/material HTTP/1.1\" 200 141 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:06:02 +0000] \"GET /v1/material HTTP/1.1\" 200 141 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"material-4","weight":5,"value":3000},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:06:21 +0000] \"POST /v1/material HTTP/1.1\" 201 130 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:06:23 +0000] \"GET /v1/material HTTP/1.1\" 200 187 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:10:19 +0000] \"GET /v1/material HTTP/1.1\" 200 187 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:10:28 +0000] \"GET /v1/material HTTP/1.1\" 200 187 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:10:54 +0000] \"GET /v1/material HTTP/1.1\" 200 187 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:12:02 +0000] \"GET /v1/material HTTP/1.1\" 200 187 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:12:41 +0000] \"GET /v1/material HTTP/1.1\" 200 246 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:14:37 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:14:46 +0000] \"GET /v1/material HTTP/1.1\" 200 247 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:15:32 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:20:50 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:22:27 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:24:26 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:29:40 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:32:17 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:34:00 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:35:22 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:37:02 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:38:18 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:39:13 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:40:57 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:44:42 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:44:54 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:45:56 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:48:00 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:50:30 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:51:23 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:10:52:21 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:15:33:08 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:15:33:30 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:15:35:27 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:15:51:31 +0000] \"GET /v1/material HTTP/1.1\" 200 248 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:15:54:26 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:01:42 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:08:25 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:10:19 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:14:06 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:15:44 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:18:06 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:19:04 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:28:36 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:30:15 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:32:43 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:35:28 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:35:35 +0000] \"GET /v1/material HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:35:43 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:36:47 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:38:01 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:38:23 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:39:30 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:47:26 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:49:18 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:50:58 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:16:54:24 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:01:05 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:04:31 +0000] \"GET /v1/user HTTP/1.1\" 200 230 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:04:55 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:05:18 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}

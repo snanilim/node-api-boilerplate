@@ -70,6 +70,6 @@ costSchema.statics = {
     },
 };
 
-const Material = mongoose.model('Material', costSchema);
+const Cost = mongoose.model('Cost', costSchema);
 
-module.exports = Material;
+module.exports = Cost;

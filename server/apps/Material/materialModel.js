@@ -28,12 +28,16 @@ const materialSchema = mongoose.Schema({
         minlength: 1,
         trim: true,
     },
+    view: {
+        type: Boolean,
+        default: true,
+    },
 }, schemaOptions);
 
 materialSchema.method({
     materialInfo() {
         const materialInfo = {};
-        const fields = ['name', 'weight', 'value'];
+        const fields = ['id', 'name', 'weight', 'value', 'view'];
 
         fields.forEach((field) => {
             materialInfo[field] = this[field];
