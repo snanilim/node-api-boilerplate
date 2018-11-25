@@ -22,12 +22,16 @@ const costSchema = mongoose.Schema({
         minlength: 1,
         trim: true,
     },
+    view: {
+        type: Boolean,
+        default: true,
+    },
 }, schemaOptions);
 
 costSchema.method({
     costInfo() {
         const costInfo = {};
-        const fields = ['name', 'value'];
+        const fields = ['id', 'name', 'value', 'view'];
 
         fields.forEach((field) => {
             costInfo[field] = this[field];
@@ -38,7 +42,7 @@ costSchema.method({
 
 costSchema.statics = {
 
-    async getOneMaterial(costID) {
+    async getOneCost(costID) {
         try {
             const cost = await this.findOne({ _id: costID });
             return cost;
@@ -47,7 +51,7 @@ costSchema.statics = {
         }
     },
 
-    async getAllMaterial({
+    async getAllCost({
         page = 1, perPage = 20, name,
     }) {
         const queryObj = { name };

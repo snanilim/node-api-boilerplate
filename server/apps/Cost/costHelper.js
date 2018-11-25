@@ -1,34 +1,34 @@
-const Material = require('./costModel');
+const Cost = require('./costModel');
 
-exports.addNewMaterial = async (data) => {
+exports.addNewCost = async (data) => {
     try {
-        const material = new Material({
+        const cost = new Cost({
             name: data.name,
             value: data.value,
         });
-        const resSavematerial = await material.save();
-        const materialInfo = resSavematerial.materialInfo();
-        return materialInfo;
+        const resSavecost = await cost.save();
+        const costInfo = resSavecost.costInfo();
+        return costInfo;
     } catch (error) {
         throw error;
     }
 };
 
-exports.listAllMaterials = async (query) => {
+exports.listAllCosts = async (query) => {
     try {
-        const resmaterialList = await Material.getAllMaterial(query);
-        const materialInfo = resmaterialList.map(material => material.materialInfo());
-        return materialInfo;
+        const rescostList = await Cost.getAllCost(query);
+        const costInfo = rescostList.map(cost => cost.costInfo());
+        return costInfo;
     } catch (error) {
         throw error;
     }
 };
 
-exports.onematerial = async (id) => {
+exports.onecost = async (id) => {
     try {
-        const resMaterialList = await Material.getOneMaterial(id);
-        const materialInfo = resMaterialList.materialInfo();
-        return materialInfo;
+        const resCostList = await Cost.getOneCost(id);
+        const costInfo = resCostList.costInfo();
+        return costInfo;
     } catch (error) {
         throw error;
     }

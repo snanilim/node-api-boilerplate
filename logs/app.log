@@ -568,3 +568,69 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:04:55 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [24/Nov/2018:17:05:18 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:16:52:41 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:16:52:49 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:16:54:38 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:16:55:55 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:16:56:38 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"message":"listAllCosts is not a function","stack":"TypeError: listAllCosts is not a function\n    at exports.costList (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costController.js:20:34)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at commonDataValidator (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costValidator.js:9:23)\n    at exports.listCosts (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costValidator.js:23:5)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:24:12\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:41:20\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:02:53 +0000] \"GET /v1/cost HTTP/1.1\" 500 1246 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"message":"Cost.getAllCost is not a function","stack":"TypeError: Cost.getAllCost is not a function\n    at exports.listAllCosts (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costHelper.js:19:40)\n    at exports.costList (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costController.js:20:34)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at commonDataValidator (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costValidator.js:9:23)\n    at exports.listCosts (/Users/hello/Documents/programmer/node-api-boilerplate/server/apps/Cost/costValidator.js:23:5)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:24:12\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:41:20\n    at process._tickCallback (internal/process/next_tick.js:68:7)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:06:50 +0000] \"GET /v1/cost HTTP/1.1\" 500 1375 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:08:30 +0000] \"GET /v1/cost HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"cost 1","value":1000},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:08:53 +0000] \"POST /v1/cost HTTP/1.1\" 201 155 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:08:59 +0000] \"GET /v1/cost HTTP/1.1\" 200 76 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"Cost 2","value":2000},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:09:13 +0000] \"POST /v1/cost HTTP/1.1\" 201 155 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:09:17 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:11:11 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:17:27:20 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:18:54:30 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"status":401,"message":{"message":"jwt malformed","stack":"JsonWebTokenError: jwt malformed\n    at Object.module.exports [as verify] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/jsonwebtoken/verify.js:49:17)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:38:33\n    at /Users/hello/Documents/programmer/node-api-boilerplate/server/middleware/auth.js:49:56\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:174:3)\n    at router (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:317:13)\n    at /Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/Users/hello/Documents/programmer/node-api-boilerplate/node_modules/express/lib/router/index.js:335:12)"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:18:54:35 +0000] \"GET /v1/cost HTTP/1.1\" 401 2063 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:18:54:44 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:18:56:23 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:18:57:45 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:00:28 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:01:20 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:01:26 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:03:26 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:10:09 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:10:52 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:15:22 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:18:22 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [25/Nov/2018:19:20:31 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
