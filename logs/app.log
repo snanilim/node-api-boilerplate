@@ -783,3 +783,76 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [26/Nov/2018:19:11:19 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [26/Nov/2018:19:11:21 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:46:45 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 590 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:46:51 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:46:53 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:47:11 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:47:13 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:50:14 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:50:32 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:51:24 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:54:47 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:54:48 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:56:03 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:56:17 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:58:38 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:14:58:40 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:01:04 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:04:52 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:05:03 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:05:11 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:06:32 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:06:34 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:09:22 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:09:23 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:10:10 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:10:11 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:18:58 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:18:59 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:32:13 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:32:14 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:34:37 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:34:38 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:35:42 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:35:43 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:38:57 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:38:59 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:42:26 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [28/Nov/2018:15:42:27 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
