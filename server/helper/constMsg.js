@@ -14,5 +14,9 @@ module.exports = Object.freeze({
     CONFLICT_CODE: 409,
     EMAIL_IS_REQUIRED: 'A Email is required for generate token',
     EMAIL_EXIST: 'Email already exist',
+    UPDATED: 'Resource updated successfully 🤗',
+    UPDATED_CODE: 204,
+    DELETED: 'Resource deleted successfully 🤗',
+    DELETED_CODE: 202,
 
 });

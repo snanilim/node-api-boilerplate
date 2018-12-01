@@ -39,6 +39,12 @@ const userSchema = mongoose.Schema({
         minlength: 3,
         trim: true,
     },
+    address: {
+        type: String,
+        maxlength: 50,
+        minlength: 3,
+        trim: true,
+    },
     phone: {
         type: String,
         maxlength: 13,
@@ -63,6 +69,11 @@ const userSchema = mongoose.Schema({
         type: String,
         enum: ['male', 'female'],
     },
+    status: {
+        type: Number,
+        enum: [0, 1],
+        default: 1,
+    },
 }, schemaOptions);
 
 userSchema.pre('save', async function save(next) {
@@ -80,7 +91,7 @@ userSchema.pre('save', async function save(next) {
 userSchema.method({
     userInfo() {
         const userInfo = {};
-        const fields = ['id', 'name', 'email', 'picture', 'role', 'createdAt'];
+        const fields = ['id', 'name', 'email', 'picture', 'role', 'createdAt', 'address', 'status'];
 
         fields.forEach((field) => {
             userInfo[field] = this[field];
@@ -109,6 +120,24 @@ userSchema.statics = {
         try {
             const user = await this.findOne({ _id: userID });
             return user;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async update(userID, data) {
+        try {
+            const user = await this.findOneAndUpdate({ _id: userID }, data);
+            return user;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async delete(userID) {
+        try {
+            await this.findOneAndDelete({ _id: userID });
+            return true;
         } catch (err) {
             throw new ThrowError(err);
         }

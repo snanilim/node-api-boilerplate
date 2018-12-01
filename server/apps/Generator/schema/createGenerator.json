@@ -1,0 +1,25 @@
+{
+  "definitions": {},
+  "type": "object",
+  "title": "The Post material Schema",
+  "required": [
+  ],
+  "properties": {
+    "materials": {
+      "$id": "materials",
+      "type": "array"
+    },
+    "costs": {
+      "$id": "costs",
+      "type": "array"
+    },
+    "profitPercentage": {
+      "$id": "profitPercentage",
+      "type": "string"
+    },
+    "basicinfo": {
+      "$id": "basicinfo",
+      "type": "object"
+    }
+  }
+}
