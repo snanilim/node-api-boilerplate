@@ -17,6 +17,18 @@
       "$id": "profitPercentage",
       "type": "string"
     },
+    "values": {
+      "$id": "values",
+      "type": "number"
+    },
+    "kg": {
+      "$id": "kg",
+      "type": "number"
+    },
+    "weight": {
+      "$id": "weight",
+      "type": "string"
+    },
     "basicinfo": {
       "$id": "basicinfo",
       "type": "object"

@@ -1,5 +1,5 @@
 const express = require('express');
-const { isAuthorized, USER } = require('../../middleware/auth');
+const { isAuthorized, USER, ADMIN } = require('../../middleware/auth');
 const generatorController = require('./generatorController');
 const validator = require('./generatorValidator');
 
@@ -12,7 +12,8 @@ router
 
 router
     .route('/:generatorID')
-    .get(isAuthorized(USER), generatorController.getOneGenerator);
+    .get(isAuthorized(USER), generatorController.getOneGenerator)
+    .put(isAuthorized(ADMIN), generatorController.updateGenerator);
 
 
 module.exports = router;

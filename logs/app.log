@@ -648,3 +648,475 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [01/Dec/2018:13:38:21 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [01/Dec/2018:13:38:25 +0000] \"GET /v1/cost HTTP/1.1\" 200 151 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:38:53 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:38:56 +0000] \"GET /v1/user HTTP/1.1\" 200 2340 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:38:57 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:38:59 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:00 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:25 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:27 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":null}],"profitPercentage":5,"basicinfo":{"productName":"asd","announceNumber":"123","presentValue":"321","dateValue":"2015-01-02"}},"level":"info"}
+{"status":400,"message":{"message":"should be string"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:36 +0000] \"POST /v1/generator HTTP/1.1\" 400 30 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:42 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:39:48 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:43:45 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:43:57 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:43:58 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":null}],"profitPercentage":5,"basicinfo":{"productName":"asd","announceNumber":"123","presentValue":"321","dateValue":"2018-12-03"}},"level":"info"}
+{"status":400,"message":{"message":"should be string"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:44:02 +0000] \"POST /v1/generator HTTP/1.1\" 400 30 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:44:07 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:45:18 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:45:38 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:45:55 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:46:10 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:46:11 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:49:14 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:49:17 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:07:49:18 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:00:00 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:00:08 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:00:11 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:00:14 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:00:15 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:01:46 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:01:50 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:03:09 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:03:12 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:04:28 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:04:31 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:05:40 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:05:43 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:05:45 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:06:41 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:06:45 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:06:46 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:07:33 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:07:36 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:07:37 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:09:14 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:09:17 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:09:19 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:10:35 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:10:39 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:10:39 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:11:27 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:11:31 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:11:32 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:12:40 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:12:44 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:13:59 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:14:04 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:15:29 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:15:33 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:15:36 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:23:02 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:23:05 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:23:07 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:23:36 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:23:40 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:24:22 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:24:26 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:24:58 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:25:01 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:25:49 +0000] \"GET /v1/generator HTTP/1.1\" 200 2 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:25:52 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:26:48 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":110},{"name":"profit","newValue":116}],"profitPercentage":"5","basicinfo":{"productName":"asd","announceNumber":"123","presentValue":"321","dateValue":"2018-12-03"}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:27:01 +0000] \"POST /v1/generator HTTP/1.1\" 201 1557 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:09:27:09 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:16:28 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:16:37 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:16:42 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1490 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:16:48 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:16:54 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:18:10 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:18:13 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1490 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:18:35 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:18:38 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:19:46 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:19:48 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1490 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:20:30 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:21:56 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:21:59 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1490 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:34:06 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:34:09 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:34:10 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:35:43 +0000] \"GET /v1/generator HTTP/1.1\" 200 1473 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:35:45 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1490 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:38:15 +0000] \"GET /v1/generator HTTP/1.1\" 200 1472 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:38:18 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1489 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:38:45 +0000] \"GET /v1/generator HTTP/1.1\" 200 1470 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:38:47 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1487 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:39:15 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:39:17 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:48:08 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [02/Dec/2018:10:48:13 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:04:57:47 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:04:57:54 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:01:05 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:01:18 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:01:33 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:01:36 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:01:49 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:08:03 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:08:07 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:08:50 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:08:52 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:09:00 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:11:09 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:11:11 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:14:40 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:14:42 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:15:06 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:15:09 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:15:35 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:15:37 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:19:01 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:19:07 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:21:21 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:21:24 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"aadmin123"},"level":"info"}
+{"status":401,"message":{"message":"Authentication Error: Invalid Email or Password"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:58:09 +0000] \"POST /v1/auth/login HTTP/1.1\" 401 61 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:58:31 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:58:37 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:58:41 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:58:49 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:59:52 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:05:59:55 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:00:03 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:00:09 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:04:23 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:04:27 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:12:46 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:12:48 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:13:43 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:13:47 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:06:14:08 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:31:49 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:31:55 +0000] \"GET /v1/generator HTTP/1.1\" 200 1467 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:32:09 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:32:22 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","values":1000,"kg":1000,"weight":"11","basicinfo":{"productName":"qwerty","announceNumber":"1234","presentValue":"4321","dateValue":"2018-12-04"}},"level":"info"}
+{"status":400,"message":{"message":"should be string"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:33:04 +0000] \"POST /v1/generator HTTP/1.1\" 400 30 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","values":1000,"kg":1000,"weight":"11","basicinfo":{"productName":"qwerty","announceNumber":"1234","presentValue":"4321","dateValue":"2018-12-04"}},"level":"info"}
+{"status":400,"message":{"message":"should be string"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:33:49 +0000] \"POST /v1/generator HTTP/1.1\" 400 30 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","values":1000,"kg":1000,"weight":"11","basicinfo":{"productName":"qwerty","announceNumber":"1234","presentValue":"4321","dateValue":"2018-12-04"}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:34:03 +0000] \"POST /v1/generator HTTP/1.1\" 201 1530 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","values":1000,"kg":1000,"weight":"11","basicinfo":{"productName":"qwerty","announceNumber":"1234","presentValue":"4321","dateValue":"2018-12-04"}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:35:03 +0000] \"POST /v1/generator HTTP/1.1\" 201 1558 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:35:23 +0000] \"GET /v1/generator HTTP/1.1\" 200 4385 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:35:25 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:36:46 +0000] \"GET /v1/generator HTTP/1.1\" 200 4385 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:07:36:48 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:17:02 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:17:09 +0000] \"GET /v1/generator HTTP/1.1\" 200 4385 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:17:11 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:18:37 +0000] \"GET /v1/generator HTTP/1.1\" 200 4385 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:18:39 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:18:48 +0000] \"GET /v1/generator HTTP/1.1\" 200 4385 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:19:04 +0000] \"GET /v1/material HTTP/1.1\" 200 459 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:19:08 +0000] \"GET /v1/cost HTTP/1.1\" 200 386 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"9.8999","wastage":"2.4750","newValue":"10.9999"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"1.1000","wastage":"0.2750","newValue":"98.9990"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"3.3000","wastage":"0.8250","newValue":"43.9996"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"5.4999","wastage":"1.3750","newValue":"54.9995"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"0.5500","wastage":"0.1375","newValue":"2.2000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","values":1000,"kg":1000,"weight":"11","basicinfo":{"productName":"qwerty","announceNumber":"1234","presentValue":"4321","dateValue":"2018-12-04"}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:19:17 +0000] \"POST /v1/generator HTTP/1.1\" 201 1558 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:19:21 +0000] \"GET /v1/generator HTTP/1.1\" 200 5858 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:19:23 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1491 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:22:36 +0000] \"GET /v1/generator HTTP/1.1\" 200 5858 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:22:39 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1491 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:24:03 +0000] \"GET /v1/generator HTTP/1.1\" 200 5858 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:24:05 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1491 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:25:59 +0000] \"GET /v1/generator HTTP/1.1\" 200 5858 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:26:01 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1491 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:26:45 +0000] \"GET /v1/generator HTTP/1.1\" 200 5858 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:26:47 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1491 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:30:58 +0000] \"GET /v1/generator HTTP/1.1\" 200 5886 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:09:30:59 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1505 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"error":{},"level":"error","message":"uncaughtException: userController is not defined\nReferenceError: userController is not defined\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Generator/generatorRoute.js:16:31)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/routes/routes.js:6:24)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)","stack":"ReferenceError: userController is not defined\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Generator/generatorRoute.js:16:31)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (/home/nilim/Documents/programmer/node-api-boilerplate/server/routes/routes.js:6:24)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:530:3)\n    at Module.require (internal/modules/cjs/loader.js:637:17)\n    at require (internal/modules/cjs/helpers.js:20:18)","exception":true,"date":"Mon Dec 03 2018 16:24:35 GMT+0600 (Bangladesh Standard Time)","process":{"pid":14491,"uid":0,"gid":0,"cwd":"/home/nilim/Documents/programmer/node-api-boilerplate","execPath":"/usr/local/bin/node","version":"v10.6.0","argv":["/usr/local/bin/node","/home/nilim/Documents/programmer/node-api-boilerplate/server/server.js"],"memoryUsage":{"rss":66555904,"heapTotal":39104512,"heapUsed":25094376,"external":18881136}},"os":{"loadavg":[2.51806640625,3.0947265625,2.880859375],"uptime":20647},"trace":[{"column":31,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/apps/Generator/generatorRoute.js","function":null,"line":16,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false},{"column":24,"file":"/home/nilim/Documents/programmer/node-api-boilerplate/server/routes/routes.js","function":null,"line":6,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":689,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":700,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":599,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"tryModuleLoad","line":538,"method":null,"native":false},{"column":3,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":530,"method":"_load","native":false},{"column":17,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":637,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":20,"method":null,"native":false}]}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:43:43 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 601 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:43:51 +0000] \"GET /v1/generator HTTP/1.1\" 200 5886 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:43:57 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1505 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:44:18 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:45:17 +0000] \"GET /v1/generator HTTP/1.1\" 200 5886 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:45:19 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1505 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:45:36 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:48:14 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:50:37 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:52:45 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:54:03 +0000] \"GET /v1/generator HTTP/1.1\" 200 5886 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:54:05 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1505 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:54:14 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:55:17 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"50.0000","wastage":"12.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","basicinfo":{"productName":"qwertys","announceNumber":"665","presentValue":"9879878","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:10:58:15 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"50.0000","wastage":"12.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","basicinfo":{"productName":"qwertys","announceNumber":"665","presentValue":"9879878","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:00:03 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:03:56 +0000] \"GET /v1/generator HTTP/1.1\" 200 5905 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:03:58 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1484 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:04:10 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:05:31 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:06:00 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:06:55 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:07:43 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:08:32 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:08:52 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:09:31 +0000] \"GET /v1/generator HTTP/1.1\" 200 5915 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:09:38 +0000] \"GET /v1/user HTTP/1.1\" 200 2340 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:09:40 +0000] \"GET /v1/user/5bffb0eabf9e1d33f0078d33 HTTP/1.1\" 200 173 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"name":"asd 31","email":"asd3@mail.com","address":"nones","role":"user","status":1},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:09:45 +0000] \"PUT /v1/user/5bffb0eabf9e1d33f0078d33 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:14:38 +0000] \"GET /v1/user HTTP/1.1\" 200 2341 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:14:40 +0000] \"GET /v1/generator HTTP/1.1\" 200 5915 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:14:42 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1494 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"99.8890","wastage":"24.9722","newValue":"110.9878"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"11.0988","wastage":"2.7747","newValue":"998.8901"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"33.2963","wastage":"8.3241","newValue":"443.9512"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"55.4939","wastage":"13.8735","newValue":"554.9390"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"1.1099","wastage":"0.2775","newValue":"22.1976"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:15:00 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:15:05 +0000] \"GET /v1/generator HTTP/1.1\" 200 5901 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:15:06 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1480 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"900.0000","wastage":"225.0000","newValue":"1000.0000"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"100.0000","wastage":"25.0000","newValue":"9000.0000"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"300.0000","wastage":"75.0000","newValue":"4000.0000"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"500.0000","wastage":"125.0000","newValue":"5000.0000"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":10,"value":200,"view":true,"newWeight":"10.0000","wastage":"2.5000","newValue":"200.0000"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":900,"view":true,"newValue":null},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":null},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":null},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":null},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":null},{"name":"profit","newValue":null}],"profitPercentage":"1","basicinfo":{"productName":"asdrytrty756","announceNumber":"87687","presentValue":"ihgyty78678","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:16:24 +0000] \"PUT /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:16:53 +0000] \"GET /v1/generator HTTP/1.1\" 200 5915 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:16:55 +0000] \"GET /v1/generator/5c03a56596a34731df6ca8b2 HTTP/1.1\" 200 1494 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:17:43 +0000] \"GET /v1/generator HTTP/1.1\" 200 5915 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:17:47 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1524 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"99.8890","wastage":"24.9722","newValue":"110.9878"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"11.0988","wastage":"2.7747","newValue":"998.8901"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"33.2963","wastage":"8.3241","newValue":"443.9512"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"55.4939","wastage":"13.8735","newValue":"554.9390"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"5.5494","wastage":"1.3874","newValue":"22.1976"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","basicinfo":{"productName":"qwertys","announceNumber":"665","presentValue":"9879878","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:18:04 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:18:08 +0000] \"GET /v1/generator HTTP/1.1\" 200 5900 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:18:10 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1509 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{"materials":[{"id":"5bfd8372b07f4957dcbe1e75","name":"Material 5","weight":900,"value":1000,"view":true,"newWeight":"99.8890","wastage":"24.9722","newValue":"110.9878"},{"id":"5bfd8367b07f4957dcbe1e74","name":"Material 4","weight":100,"value":9000,"view":true,"newWeight":"11.0988","wastage":"2.7747","newValue":"998.8901"},{"id":"5bfd835cb07f4957dcbe1e73","name":"Material 3","weight":300,"value":4000,"view":true,"newWeight":"33.2963","wastage":"8.3241","newValue":"443.9512"},{"id":"5bfd834eb07f4957dcbe1e72","name":"Material 2","weight":500,"value":5000,"view":true,"newWeight":"55.4939","wastage":"13.8735","newValue":"554.9390"},{"id":"5bfd394ad2dac94097567af9","name":"material 1","weight":50,"value":200,"view":true,"newWeight":"5.5494","wastage":"1.3874","newValue":"22.1976"}],"costs":[{"id":"5bfd83abb07f4957dcbe1e7a","name":"cost 5","value":800000,"view":true,"newValue":800},{"id":"5bfd83a3b07f4957dcbe1e79","name":"cost 4","value":500000,"view":true,"newValue":500},{"id":"5bfd839bb07f4957dcbe1e78","name":"cost 3","value":400000,"view":true,"newValue":400},{"id":"5bfd8393b07f4957dcbe1e77","name":"cost 2","value":300000,"view":true,"newValue":300},{"id":"5bfd838ab07f4957dcbe1e76","name":"cost 1","value":200000,"view":true,"newValue":200},{"name":"profit","newValue":330}],"profitPercentage":"15","basicinfo":{"productName":"qwertys","announceNumber":"665","presentValue":"9879878","dateValue":""}},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:18:28 +0000] \"PUT /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 204 - \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:19:03 +0000] \"GET /v1/generator HTTP/1.1\" 200 5900 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:19:05 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1509 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:19:23 +0000] \"GET /v1/generator HTTP/1.1\" 200 5900 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}

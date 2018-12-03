@@ -22,6 +22,18 @@ const generatorSchema = mongoose.Schema({
         type: String,
         trim: true,
     },
+    values: {
+        type: String,
+        trim: true,
+    },
+    kg: {
+        type: String,
+        trim: true,
+    },
+    weight: {
+        type: String,
+        trim: true,
+    },
     basicinfo: {
         type: Object,
         trim: true,
@@ -31,7 +43,7 @@ const generatorSchema = mongoose.Schema({
 generatorSchema.method({
     generatorInfo() {
         const generatorInfo = {};
-        const fields = ['id', 'materials', 'costs', 'profitPercentage', 'basicinfo'];
+        const fields = ['id', 'materials', 'costs', 'profitPercentage', 'values', 'kg', 'weight', 'basicinfo'];
 
         fields.forEach((field) => {
             generatorInfo[field] = this[field];
@@ -46,6 +58,16 @@ generatorSchema.statics = {
         console.log('generatorID', generatorID);
         try {
             const generator = await this.findOne({ _id: generatorID });
+            return generator;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async update(generatorID, data) {
+        console.log(generatorID, data);
+        try {
+            const generator = await this.findOneAndUpdate({ _id: generatorID }, data);
             return generator;
         } catch (err) {
             throw new ThrowError(err);

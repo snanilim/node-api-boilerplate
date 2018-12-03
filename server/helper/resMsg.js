@@ -3,5 +3,6 @@ exports.resMsg = (sendMsg, status, res, next) => {
     message.result = 'success';
 
     res.status(status);
+    console.log('message', message);
     return res.json(message);
 };

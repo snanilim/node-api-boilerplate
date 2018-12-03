@@ -6,6 +6,9 @@ exports.addNewGenerator = async (data) => {
             materials: data.materials,
             costs: data.costs,
             profitPercentage: data.profitPercentage,
+            values: data.values,
+            kg: data.kg,
+            weight: data.weight,
             basicinfo: data.basicinfo,
         });
         const resSavegenerator = await generator.save();
@@ -13,6 +16,16 @@ exports.addNewGenerator = async (data) => {
         return generatorInfo;
     } catch (error) {
         throw error;
+    }
+};
+
+exports.updateOneGenerator = async (generatorID, data) => {
+    try {
+        const resSaveGenerator = await Generator.update(generatorID, data);
+        const generatorInfo = resSaveGenerator.generatorInfo();
+        return generatorInfo;
+    } catch (error) {
+        throw Generator.checkDuplicateEmail(error);
     }
 };
 
