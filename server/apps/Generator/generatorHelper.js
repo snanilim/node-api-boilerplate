@@ -21,11 +21,10 @@ exports.addNewGenerator = async (data) => {
 
 exports.updateOneGenerator = async (generatorID, data) => {
     try {
-        const resSaveGenerator = await Generator.update(generatorID, data);
-        const generatorInfo = resSaveGenerator.generatorInfo();
-        return generatorInfo;
+        await Generator.update(generatorID, data);
+        return true;
     } catch (error) {
-        throw Generator.checkDuplicateEmail(error);
+        throw error;
     }
 };
 
@@ -42,9 +41,17 @@ exports.listAllGenerators = async (query) => {
 exports.oneGenerator = async (id) => {
     try {
         const resGeneratorList = await Generator.getOneGenerator(id);
-        console.log('resGeneratorList', resGeneratorList);
         const generatorInfo = resGeneratorList.generatorInfo();
         return generatorInfo;
+    } catch (error) {
+        throw error;
+    }
+};
+
+exports.deleteGenerator = async (id) => {
+    try {
+        await Generator.delete(id);
+        return true;
     } catch (error) {
         throw error;
     }
