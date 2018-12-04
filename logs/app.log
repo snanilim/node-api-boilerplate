@@ -1120,3 +1120,23 @@
 {"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:19:05 +0000] \"GET /v1/generator/5c04f515d5550a2b5cf25608 HTTP/1.1\" 200 1509 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
 {"status":"start","message":{},"level":"info"}
 {"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:11:19:23 +0000] \"GET /v1/generator HTTP/1.1\" 200 5900 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"message":"MongoDB Connection was faield: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"error"}
+{"message":"Mongodb Connected Succesfully","level":"info"}
+{"status":"start","message":{"email":"admin@mail.com","password":"admin123"},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:20:34 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 616 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:20:36 +0000] \"GET /v1/material HTTP/1.1\" 200 408 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:20:38 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:22:55 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:23:01 +0000] \"GET /v1/generator/5c024be89bf96702e5492e86 HTTP/1.1\" 200 720 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:26:50 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:28:30 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:29:59 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
+{"status":"start","message":{},"level":"info"}
+{"message":{"end":"::ffff:127.0.0.1 - - [03/Dec/2018:16:30:22 +0000] \"GET /v1/generator HTTP/1.1\" 200 1583 \"-\" \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\"\n"},"level":"info"}
