@@ -26,7 +26,7 @@ exports.updateUser = async (req, res, next) => {
         const resNewUser = await updateOneUser(params.userID, body);
         const message = constMsg.CREATED;
         const sendMessage = { user: resNewUser, message };
-        return resMsg(sendMessage, constMsg.UPDATED_CODE, res, next);
+        return resMsg(sendMessage, constMsg.SUCCESS_CODE, res, next);
     } catch (error) {
         return next(error);
     }
@@ -56,7 +56,7 @@ exports.deleteUser = async (req, res, next) => {
     const { params } = req;
     try {
         await deleteUser(params.userID);
-        return resMsg(constMsg.DELETED, constMsg.DELETED_CODE, res, next);
+        return resMsg(constMsg.DELETED, constMsg.SUCCESS_CODE, res, next);
     } catch (error) {
         return next(error);
     }

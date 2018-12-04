@@ -15,7 +15,7 @@
     },
     "profitPercentage": {
       "$id": "profitPercentage",
-      "type": "string"
+      "type": "number"
     },
     "values": {
       "$id": "values",
@@ -27,7 +27,7 @@
     },
     "weight": {
       "$id": "weight",
-      "type": "string"
+      "type": "number"
     },
     "basicinfo": {
       "$id": "basicinfo",

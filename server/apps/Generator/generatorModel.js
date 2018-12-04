@@ -19,19 +19,19 @@ const generatorSchema = mongoose.Schema({
         trim: true,
     },
     profitPercentage: {
-        type: String,
+        type: Number,
         trim: true,
     },
     values: {
-        type: String,
+        type: Number,
         trim: true,
     },
     kg: {
-        type: String,
+        type: Number,
         trim: true,
     },
     weight: {
-        type: String,
+        type: Number,
         trim: true,
     },
     basicinfo: {
@@ -67,8 +67,17 @@ generatorSchema.statics = {
     async update(generatorID, data) {
         console.log(generatorID, data);
         try {
-            const generator = await this.findOneAndUpdate({ _id: generatorID }, data);
-            return generator;
+            await this.findOneAndUpdate({ _id: generatorID }, data);
+            return true;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async delete(generatorID) {
+        try {
+            await this.findOneAndDelete({ _id: generatorID });
+            return true;
         } catch (err) {
             throw new ThrowError(err);
         }

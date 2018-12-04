@@ -13,7 +13,8 @@ router
 router
     .route('/:generatorID')
     .get(isAuthorized(USER), generatorController.getOneGenerator)
-    .put(isAuthorized(ADMIN), generatorController.updateGenerator);
+    .put(isAuthorized(ADMIN), generatorController.updateGenerator)
+    .delete(isAuthorized(ADMIN), generatorController.deleteGenerator);
 
 
 module.exports = router;
