@@ -12,7 +12,9 @@ router
 
 router
     .route('/:costID')
-    .get(isAuthorized(USER), costController.getOneCost);
+    .get(isAuthorized(USER), costController.getOneCost)
+    .put(isAuthorized(USER), costController.updateCost)
+    .delete(isAuthorized(USER), costController.deleteCost);
 
 
 module.exports = router;

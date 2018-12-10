@@ -15,6 +15,16 @@ exports.addNewMaterial = async (data) => {
     }
 };
 
+exports.updateOneMaterial = async (materialID, data) => {
+    try {
+        const resSaveMaterial = await Material.update(materialID, data);
+        const materialInfo = resSaveMaterial.materialInfo();
+        return materialInfo;
+    } catch (error) {
+        throw Material.checkDuplicateEmail(error);
+    }
+};
+
 exports.listAllMaterials = async (query) => {
     try {
         const resmaterialList = await Material.getAllMaterial(query);
@@ -25,11 +35,20 @@ exports.listAllMaterials = async (query) => {
     }
 };
 
-exports.onematerial = async (id) => {
+exports.oneMaterial = async (id) => {
     try {
         const resMaterialList = await Material.getOneMaterial(id);
         const materialInfo = resMaterialList.materialInfo();
         return materialInfo;
+    } catch (error) {
+        throw error;
+    }
+};
+
+exports.deleteMaterial = async (id) => {
+    try {
+        await Material.delete(id);
+        return true;
     } catch (error) {
         throw error;
     }

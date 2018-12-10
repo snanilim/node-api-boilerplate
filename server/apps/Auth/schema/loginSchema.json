@@ -18,9 +18,7 @@
     "password": {
       "$id": "password",
       "type": "string",
-      "title": "The Password Schema",
-      "minLength": 6,
-      "maxLength": 16
+      "title": "The Password Schema"
     },
     "name": {
       "$id": "name",

@@ -14,6 +14,16 @@ exports.addNewCost = async (data) => {
     }
 };
 
+exports.updateOneCost = async (costID, data) => {
+    try {
+        const resSaveCost = await Cost.update(costID, data);
+        const costInfo = resSaveCost.costInfo();
+        return costInfo;
+    } catch (error) {
+        throw Cost.checkDuplicateEmail(error);
+    }
+};
+
 exports.listAllCosts = async (query) => {
     try {
         const rescostList = await Cost.getAllCost(query);
@@ -24,11 +34,20 @@ exports.listAllCosts = async (query) => {
     }
 };
 
-exports.onecost = async (id) => {
+exports.oneCost = async (id) => {
     try {
         const resCostList = await Cost.getOneCost(id);
         const costInfo = resCostList.costInfo();
         return costInfo;
+    } catch (error) {
+        throw error;
+    }
+};
+
+exports.deleteCost = async (id) => {
+    try {
+        await Cost.delete(id);
+        return true;
     } catch (error) {
         throw error;
     }

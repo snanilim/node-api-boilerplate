@@ -51,6 +51,24 @@ costSchema.statics = {
         }
     },
 
+    async update(costID, data) {
+        try {
+            const cost = await this.findOneAndUpdate({ _id: costID }, data);
+            return cost;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async delete(costID) {
+        try {
+            await this.findOneAndDelete({ _id: costID });
+            return true;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
     async getAllCost({
         page = 1, perPage = 20, name,
     }) {

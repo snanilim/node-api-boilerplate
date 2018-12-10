@@ -57,6 +57,24 @@ materialSchema.statics = {
         }
     },
 
+    async update(materialID, data) {
+        try {
+            const material = await this.findOneAndUpdate({ _id: materialID }, data);
+            return material;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
+    async delete(materialID) {
+        try {
+            await this.findOneAndDelete({ _id: materialID });
+            return true;
+        } catch (err) {
+            throw new ThrowError(err);
+        }
+    },
+
     async getAllMaterial({
         page = 1, perPage = 20, name,
     }) {
