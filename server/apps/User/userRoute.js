@@ -13,7 +13,7 @@ router
 router
     .route('/:userID')
     .get(isAuthorized(USER), userController.getOneUser)
-    .put(isAuthorized(ADMIN), userController.updateUser)
+    .put(isAuthorized(USER), userController.updateUser)
     .delete(isAuthorized(ADMIN), userController.deleteUser);
 
 module.exports = router;
