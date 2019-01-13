@@ -1,24 +1,22 @@
-const mongoose = require('mongoose');
+const mysql = require('mysql');
 const config = require('config');
 const logger = require('../settings/winston');
 
-mongoose.connection.on('open', (ref) => {
-    logger.info('Mongodb Connected Succesfully');
+const db = mysql.createConnection ({
+    host: 'localhost',
+    user: 'root',
+    password: 'admin@123',
+    database: 'test_schema'
 });
-
-mongoose.connection.on('error', (err) => {
-    logger.error(`MongoDB Connection was faield: ${err.message}`);
-    process.exit(-1);
-});
-
-if (config.util.getEnv('NODE_ENV') === 'development') {
-    mongoose.set('debug', true);
-}
 
 exports.connect = () => {
-    mongoose.connect(config.get('mongo_uri'), {
-        keepAlive: 1,
-        useNewUrlParser: true,
+    db.connect((err) => {
+        if (err) {
+            throw err;
+        }
+        console.log('Connected to database');
     });
-    return mongoose.connection;
+    // return db;
 };
+
+exports.db = db;

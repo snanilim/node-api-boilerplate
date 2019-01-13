@@ -2,9 +2,14 @@ require('dotenv').config();
 const config = require('config');
 const log = require('debug')('log:http');
 const http = require('http');
-const mongo = require('./settings/db');
+const mysql = require('mysql');
+const db = require('./settings/db');
 
-mongo.connect();
+// connect to database
+db.connect();
+console.log('db', db);
+
+global.db = db.db;
 
 const app = require('./settings/app');
 
