@@ -3,7 +3,7 @@ const moment = require('moment');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const config = require('config');
-const ThrowError = require('../../helper/throwError');
+const APIError = require('../../helper/apiError');
 const constMsg = require('../../helper/constMsg');
 
 
@@ -110,7 +110,7 @@ userSchema.statics = {
             const user = await this.findOne({ _id: userID });
             return user;
         } catch (err) {
-            throw new ThrowError(err);
+            throw new APIError(err);
         }
     },
 
@@ -139,7 +139,7 @@ userSchema.statics = {
     async findAndGenerateToken(options) {
         try {
             const { email, password, refreshObj } = options;
-            if (!email) throw new ThrowError({ message: constMsg.EMAIL_IS_REQUIRED });
+            if (!email) throw new APIError({ message: constMsg.EMAIL_IS_REQUIRED });
             const user = await this.findOne({ email }).exec();
 
             const err = {
@@ -157,7 +157,7 @@ userSchema.statics = {
             } else {
                 err.message = constMsg.UNAUTHORIZED;
             }
-            throw new ThrowError(err);
+            throw new APIError(err);
         } catch (error) {
             throw error;
         }
@@ -165,7 +165,7 @@ userSchema.statics = {
 
     checkDuplicateEmail(error) {
         if (error.code === 11000 && (error.name === 'BulkWriteError' || error.name === 'MongoError')) {
-            throw new ThrowError({
+            throw new APIError({
                 message: constMsg.EMAIL_EXIST,
                 errors: [{
                     field: 'email',

@@ -1,5 +1,5 @@
 const Ajv = require('ajv');
-const ThrowError = require('../../helper/throwError');
+const APIError = require('../../helper/apiError');
 const constants = require('../../helper/constMsg');
 
 const ajv = new Ajv();
@@ -9,11 +9,11 @@ const commonDataValidator = (schemaName, data, next) => {
     if (valid) return next();
 
     const error = ajv.errors;
-    const throwError = new ThrowError({
+    const apiError = new APIError({
         message: error[0].message,
         status: constants.BAD_REQUEST_CODE,
     });
-    return next(throwError);
+    return next(apiError);
 };
 
 exports.sign_up = (req, res, next) => {

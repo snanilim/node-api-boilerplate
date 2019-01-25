@@ -1,6 +1,6 @@
 const md5 = require('md5');
 const config = require('config');
-const ThrowError = require('../helper/throwError');
+const APIError = require('../helper/apiError');
 const constants = require('../helper/constMsg');
 const logger = require('../settings/winston');
 
@@ -19,7 +19,7 @@ const signature = (req, res, next) => {
     if (createdSign === headerSign) {
         return next();
     }
-    throw new ThrowError({
+    throw new APIError({
         message: constants.SIGNATURE_INVALID,
         status: constants.ACCESS_FORBIDDEN_CODE,
     });

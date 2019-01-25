@@ -13,7 +13,7 @@ class ErrorExtend extends Error {
 }
 
 
-class ThrowError extends ErrorExtend {
+class APIError extends ErrorExtend {
     constructor({
         message,
         errors,
@@ -27,4 +27,4 @@ class ThrowError extends ErrorExtend {
     }
 }
 
-module.exports = ThrowError;
+module.exports = APIError;

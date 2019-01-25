@@ -1,6 +1,6 @@
 const config = require('config');
 const constants = require('./constMsg');
-const ThrowError = require('./throwError');
+const APIError = require('./apiError');
 const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
@@ -25,7 +25,7 @@ const errorHandler = (err, req, res, next) => {
 exports.errorHandler = errorHandler;
 
 exports.notFound = (req, res, next) => {
-    const err = new ThrowError({
+    const err = new APIError({
         message: constants.NOT_FOUND,
         status: constants.NOT_FOUND_CODE,
     });

@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const User = require('../apps/User/userModel');
-const ThrowError = require('../helper/throwError');
+const User = require('../services/User/userModel');
+const APIError = require('../helper/apiError');
 
 const ADMIN = 'admin';
 const USER = 'user';
@@ -9,15 +9,15 @@ const USER = 'user';
 
 const handleAuth = (req, res, next, roles) => async (err, user, info) => {
     const error = err || info;
-    const throwError = new ThrowError({
+    const apiError = new APIError({
         message: error ? error.message : 'forbidden',
         status: error ? 401 : 403,
         stack: error ? error.stack : undefined,
         isPublic: true,
     });
 
-    if (error) return next(throwError);
-    if (user.role !== roles && user.role !== 'admin') return next(throwError);
+    if (error) return next(apiError);
+    if (user.role !== roles && user.role !== 'admin') return next(apiError);
 
     console.log('log');
     req.user = user;
