@@ -8,11 +8,17 @@ const log = require('debug')('log:app');
 const route = require('../routes/routes');
 const signature = require('../middleware/signature');
 const resError = require('../helper/resError');
-const winston = require('./winston');
+const winston = require('./winston')(__filename);
 
 const app = express();
 
-log(config.get('app_key'));
+winston.debug('Debugging info');
+winston.verbose('Verbose info');
+winston.info('Hello world');
+winston.warn('Warning message');
+winston.error('Error info');
+
+log(config.util.getEnv('NODE_ENV'));
 
 // app.use(winston.info);
 app.use(helmet());
