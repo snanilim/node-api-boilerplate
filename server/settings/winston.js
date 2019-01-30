@@ -23,8 +23,8 @@ const logger = (caller) => {
   return createLogger({
     level: env === 'development' ? 'debug' : 'info',
     format: format.combine(
-        // format.label({ label: path.basename(caller) }),
-        format.label({ label: caller }),
+        format.label({ label: path.basename(caller) }),
+        // format.label({ label: caller }),
         format.timestamp({
             format: 'YYYY-MD-DD HH:mm:ss',
         }),

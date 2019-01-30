@@ -14,7 +14,11 @@ const app = express();
 
 winston.debug('Debugging info');
 winston.verbose('Verbose info');
-winston.info('Hello world');
+winston.log({
+    level: 'info',
+    message: 'What time is the testing at?',
+    query: 'its a test info',
+});
 winston.warn('Warning message');
 winston.error('Error info');
 
