@@ -7,8 +7,6 @@ const db = require('./settings/db');
 
 // connect to database
 db.connect();
-console.log('db', db);
-
 global.db = db.db;
 
 const app = require('./settings/app');
