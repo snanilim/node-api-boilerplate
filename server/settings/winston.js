@@ -1,6 +1,6 @@
 const appRoot = require('app-root-path');
 const fs = require('fs');
-const { createLogger, format, transports, addColors } = require('winston');
+const { createLogger, format, transports } = require('winston');
 require('winston-daily-rotate-file');
 
 const logDir = 'logs';

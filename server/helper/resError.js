@@ -4,6 +4,9 @@ const APIError = require('./apiError');
 const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
+    var d = new Date();
+    var n = d.getMilliseconds();
+    console.log('req------------2', n);
     console.log('err', err);
     const errorMessage = {
         message: err.message,

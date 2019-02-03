@@ -4,6 +4,9 @@ const constMsg = require('../../helper/constMsg');
 
 
 exports.signUp = async (req, res, next) => {
+    var d = new Date();
+    var n = d.getMilliseconds();
+    console.log('req------------3', n);
     const { body: data } = req;
     try {
         const resSaveUser = await saveNewUser(data);
