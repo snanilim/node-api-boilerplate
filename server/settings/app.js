@@ -8,7 +8,7 @@ const log = require('debug')('log:app');
 const route = require('../routes/routes');
 const signature = require('../middleware/signature');
 const resError = require('../helper/resError');
-const winston = require('./winston')(__filename);
+const winston = require('./winston');
 
 const app = express();
 
@@ -22,7 +22,6 @@ winston.log({
 });
 winston.warn('Warning message');
 winston.error('Error info');
-winston.custom('hello');
 
 log(config.util.getEnv('NODE_ENV'));
 
