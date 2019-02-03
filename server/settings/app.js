@@ -15,12 +15,14 @@ const app = express();
 winston.debug('Debugging info');
 winston.verbose('Verbose info');
 winston.log({
+    private: true,
     level: 'info',
     message: 'What time is the testing at?',
     query: 'its a test info',
 });
 winston.warn('Warning message');
 winston.error('Error info');
+winston.custom('hello');
 
 log(config.util.getEnv('NODE_ENV'));
 
