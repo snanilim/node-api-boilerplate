@@ -52,7 +52,9 @@ const options = {
         info: 4,
         verbose: 5,
         silly: 6,
-        custom: 7,
+        start: 7,
+        end: 8,
+        custom: 9,
     },
 };
 

@@ -4,10 +4,6 @@ const APIError = require('./apiError');
 const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
-    var d = new Date();
-    var n = d.getMilliseconds();
-    console.log('req------------2', n);
-    console.log('err', err);
     const errorMessage = {
         message: err.message,
         errors: err.errors,
@@ -18,11 +14,12 @@ const errorHandler = (err, req, res, next) => {
         delete errorMessage.stack;
     }
 
-    logger.info({ status: err.status, message: errorMessage });
+    logger.error({ status: err.status, message: errorMessage, transactionID: req.uniqID });
 
     res.status(err.status || 500);
     res.json(errorMessage);
     res.end();
+    return next();
 };
 
 exports.errorHandler = errorHandler;

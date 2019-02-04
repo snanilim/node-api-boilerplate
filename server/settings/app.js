@@ -8,26 +8,15 @@ const log = require('debug')('log:app');
 const route = require('../routes/routes');
 const signature = require('../middleware/signature');
 const resError = require('../helper/resError');
+const { resStart, resEnd } = require('../helper/util');
 const winston = require('./winston');
 
 const app = express();
-
-winston.debug('Debugging info');
-winston.verbose('Verbose info');
-winston.log({
-    private: true,
-    level: 'info',
-    message: 'What time is the testing at?',
-    query: 'its a test info',
-});
-winston.warn('Warning message');
-winston.error('Error info');
-
-log(config.util.getEnv('NODE_ENV'));
+app.use(resStart);
 
 // app.use(winston.info);
 app.use(helmet());
-app.use(morgan('combined', { stream: winston.end }));
+app.use(morgan('combined', winston.log));
 app.use(morgan('dev'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -38,5 +27,6 @@ app.use(`/${config.get('version')}`, signature, route);
 
 app.use(resError.notFound);
 app.use(resError.errorHandler);
+app.use(resEnd);
 
 module.exports = app;

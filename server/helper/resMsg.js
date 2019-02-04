@@ -3,5 +3,7 @@ exports.resMsg = (sendMsg, status, res, next) => {
     message.result = 'success';
 
     res.status(status);
-    return res.json(message);
+    res.json(message);
+
+    return next();
 };

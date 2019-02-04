@@ -1,12 +1,11 @@
 const { resMsg } = require('../../helper/resMsg');
 const { saveNewUser, checkUser } = require('./authHelper');
 const constMsg = require('../../helper/constMsg');
+const { resTimeChecker } = require('../../helper/util');
 
 
 exports.signUp = async (req, res, next) => {
-    var d = new Date();
-    var n = d.getMilliseconds();
-    console.log('req------------3', n);
+    resTimeChecker('aaa');
     const { body: data } = req;
     try {
         const resSaveUser = await saveNewUser(data);

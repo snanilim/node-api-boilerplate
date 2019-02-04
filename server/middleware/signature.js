@@ -2,14 +2,8 @@ const md5 = require('md5');
 const config = require('config');
 const APIError = require('../helper/apiError');
 const constants = require('../helper/constMsg');
-const logger = require('../settings/winston');
 
 const signature = (req, res, next) => {
-    req.customID = 'asd123';
-    var d = new Date();
-    var n = d.getMilliseconds();
-    console.log('req------------1', n);
-    logger.info({ status: 'start', message: req.body });
     const headerSign = req.headers.signature;
     const { body: data } = req;
     const dataStr = JSON.stringify(data);
