@@ -1,6 +1,7 @@
 const config = require('config');
 const constants = require('./constMsg');
 const APIError = require('./apiError');
+const { resEnd } = require('./util');
 const logger = require('../settings/winston');
 
 const errorHandler = (err, req, res, next) => {
@@ -18,8 +19,8 @@ const errorHandler = (err, req, res, next) => {
 
     res.status(err.status || 500);
     res.json(errorMessage);
-    res.end();
-    return next();
+    resEnd(req);
+    return res.end();
 };
 
 exports.errorHandler = errorHandler;

@@ -29,6 +29,8 @@ const dailyCustomCombineTransport = new transports.DailyRotateFile({
     maxSize: '20m',
     maxFiles: '14d',
     level: 'custom',
+    handleExceptions: true,
+    humanReadableUnhandledException: true,
   });
 
 const options = {
@@ -50,11 +52,12 @@ const options = {
         warn: 2,
         data: 3,
         info: 4,
-        verbose: 5,
+        success: 5,
         silly: 6,
         start: 7,
         end: 8,
-        custom: 9,
+        streem: 9,
+        custom: 10,
     },
 };
 
@@ -75,5 +78,11 @@ const logger = createLogger({
     exitOnError: false, // do not exit on handled exceptions
 });
 
+logger.stream = {
+  write: function(message, encoding) {
+    // use the 'info' log level so the output will be picked up by both transports (file and console)
+    logger.streem(message);
+  },
+};
 
 module.exports = logger;

@@ -5,6 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "DEBUG=log:* nodemon server/server.js",
+    "expressDEBUG": "DEBUG=log:* DEBUG=express:* nodemon server/server.js",
     "test": "jest $(find server -name '*test.js')"
   },
   "repository": {
