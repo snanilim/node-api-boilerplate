@@ -3,7 +3,7 @@ const config = require('config');
 const log = require('debug')('log:http');
 const http = require('http');
 const mongo = require('./settings/db');
-const winston = require('./settings/winston');
+const winston = require('./settings/winston')(__filename);
 
 mongo.connect();
 

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('config');
-const logger = require('../settings/winston');
+const logger = require('../settings/winston')(__filename);
 
 mongoose.connection.on('open', (ref) => {
     logger.info('Mongodb Connected Succesfully');

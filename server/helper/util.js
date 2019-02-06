@@ -1,6 +1,6 @@
 const moment = require('moment');
 const uuidv1 = require('uuid/v1');
-const logger = require('../settings/winston');
+const logger = require('../settings/winston')(__filename);
 
 exports.resTimeChecker = (title) => {
     console.log(`${title} : ${moment().format()}`, 'background: #222; color: #bada55');

@@ -2,7 +2,7 @@ const config = require('config');
 const constants = require('./constMsg');
 const APIError = require('./apiError');
 const { resEnd } = require('./util');
-const logger = require('../settings/winston');
+const logger = require('../settings/winston')(__filename);
 
 const errorHandler = (err, req, res, next) => {
     const errorMessage = {
@@ -15,7 +15,7 @@ const errorHandler = (err, req, res, next) => {
         delete errorMessage.stack;
     }
 
-    logger.error({ status: err.status, message: errorMessage, transactionID: req.uniqID });
+    logger.error({ status: err.status || 500, message: errorMessage, transactionID: req.uniqID });
 
     res.status(err.status || 500);
     res.json(errorMessage);

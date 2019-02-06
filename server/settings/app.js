@@ -15,7 +15,7 @@ const app = express();
 app.use(resStart);
 app.use(helmet());
 
-app.use(morgan('combined', { stream: winston.stream }));
+// app.use(morgan('combined', { stream: winston.stream }));
 app.use(morgan('dev'));
 
 app.use(bodyParser.urlencoded({ extended: true }));

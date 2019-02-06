@@ -1,4 +1,4 @@
-const logger = require('../settings/winston');
+const logger = require('../settings/winston')(__filename);
 const { resEnd } = require('./util');
 
 exports.resMsg = (sendMsg, status, req, res, next) => {

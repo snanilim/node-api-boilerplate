@@ -5,9 +5,10 @@ const { resTimeChecker } = require('../../helper/util');
 
 
 exports.signUp = async (req, res, next) => {
-    resTimeChecker('aaa');
-    const { body: data } = req;
     try {
+        const { body: data } = req;
+        resTimeChecker('aaa');
+
         const resSaveUser = await saveNewUser(data);
         const message = constMsg.SIGNUP;
         const sendMessage = { user: resSaveUser.user, token: resSaveUser.token, message };
@@ -18,8 +19,8 @@ exports.signUp = async (req, res, next) => {
 };
 
 exports.logIn = async (req, res, next) => {
-    const { body: data } = req;
     try {
+        const { body: data } = req;
         const resLogUser = await checkUser(data);
         const message = { message: constMsg.LOGIN };
         const sendMessage = { user: resLogUser.user, token: resLogUser.token, message };

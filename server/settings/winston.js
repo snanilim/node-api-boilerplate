@@ -2,6 +2,7 @@ const appRoot = require('app-root-path');
 const fs = require('fs');
 const { createLogger, format, transports } = require('winston');
 require('winston-daily-rotate-file');
+const path = require('path');
 
 const logDir = 'logs';
 
@@ -61,14 +62,17 @@ const options = {
     },
 };
 
-const logger = createLogger({
+const logger = (caller) => {
+  const log = createLogger({
     levels: options.levels,
     level: 'custom',
     format: format.combine(
+      format.label({ label: path.basename(caller) }),
+      format.ms(),
       format.timestamp({
         format: 'YYYY-MM-DD HH:mm:ss',
       }),
-      format.json(info => `${info.timestamp} ${info.level}: ${info.message}`),
+      format.json(info => `${info.ms} ${info.level} ${info.timestamp} [${info.label}]: ${info.message}`),
     ),
     transports: [
       new transports.Console(options.console),
@@ -76,13 +80,16 @@ const logger = createLogger({
       dailyCustomCombineTransport,
     ],
     exitOnError: false, // do not exit on handled exceptions
-});
-
-logger.stream = {
-  write: function(message, encoding) {
-    // use the 'info' log level so the output will be picked up by both transports (file and console)
-    logger.streem(message);
-  },
+  });
+  return log;
 };
+
+
+// logger.stream = {
+//   write: function(message, encoding) {
+//    use the 'info' log level so the output will be picked up by both transports (file and console)
+//     logger.streem(message);
+//   },
+// };
 
 module.exports = logger;
