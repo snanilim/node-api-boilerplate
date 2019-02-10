@@ -1,11 +1,9 @@
-const moment = require('moment');
+const log = require('debug')('log:call');
 const uuidv1 = require('uuid/v1');
 const logger = require('../settings/winston')(__filename);
 
-exports.resTimeChecker = (title) => {
-    console.log(`${title} : ${moment().format()}`, 'background: #222; color: #bada55');
-    return true;
-};
+exports.resTimeChecker = title => log(`${title}`);
+
 
 exports.resStart = (req, res, next) => {
     // console.log(req.get('User-Agent'));
