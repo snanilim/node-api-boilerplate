@@ -208,18 +208,17 @@
 
 // console.log(result);
 
-var bunny = {
-    name: 'Usagi',
-    tasks: ['transform', 'eat cake', 'blow kisses'],
-    showTasks: function() {
-      var _this = this;
-      _this.tasks.forEach(function(task) {
-        console.log(_this.name + " wants to " + task); 
-      });
-    }
-  };
-  
-  bunny.showTasks();
+// var bunny = {
+//     name: 'Usagi',
+//     tasks: ['transform', 'eat cake', 'blow kisses'],
+//     showTasks: function() {
+//       var _this = this;
+//       _this.tasks.forEach(function(task) {
+//         console.log(_this.name + " wants to " + task);
+//       });
+//     }
+//   };
+//   bunny.showTasks();
 
 
 // var bunny = {
@@ -228,8 +227,58 @@ var bunny = {
 //     showTasks() {
 //       this.tasks.forEach((task) => {
 //         console.log(this.name + " wants to " + task);
-//       });  
+//       });
 //     }
 //   };
-  
+
 //   bunny.showTasks();
+
+
+// const one = function none () {
+//   try {
+//     setTimeout(() => {
+//         throw new Error('asd');
+//     }, 100);
+// } catch(e) {
+//     console.log(e); // Nothing, nada, zero, zilch, not even a sound
+// }
+
+// };
+
+// one();
+
+const checkAuth = () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve({ isAuth: true });
+        }, 2000);
+    })
+};
+
+const getUser = (authInfo) => {
+    if (authInfo.isAuth) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve({ name: 'nilim' });
+            }, 2000);
+        });
+    }
+};
+
+
+// checkAuth()
+// .then(authInfo => {
+//     return getUser(authInfo);
+// })
+// .then(user => {
+//     console.log(user.name);
+// });
+
+const fetchUser = async () => {
+    const authInfo = await checkAuth();
+    const user = await getUser(authInfo);
+
+    console.log(user.name);
+};
+
+fetchUser();
